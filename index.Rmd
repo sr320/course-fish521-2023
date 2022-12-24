@@ -1,6 +1,6 @@
 ---
 title: "Proposal Writing and Professional Development for Graduate Students"
-subtitle: "FISH 521 &nbsp; &nbsp; University of Washington &nbsp; &nbsp; Winter 2022"
+subtitle: "FISH 521 &nbsp; &nbsp; University of Washington &nbsp; &nbsp; Winter 2023"
 output:
   html_document:
     toc: true

@@ -1,7 +1,7 @@
 ---
 title: "Course overview"
 subtitle: "Proposal writing & professional development<br>FISH 521"
-author: "Mark Scheuerell"
+author: "Steven Robertsl"
 date: "3 January 2022"
 output:
   ioslides_presentation:
