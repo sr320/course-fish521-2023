@@ -13,9 +13,10 @@
 
 <title>Homework</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -63,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -83,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -140,11 +145,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -173,8 +182,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -182,16 +191,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,7 +237,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -257,7 +259,7 @@ $(document).ready(function () {
   <a href="references.html">References</a>
 </li>
 <li>
-  <a href="https://github.com/UW-FISH521">
+  <a href="https://sr320.github.io/course-fish521-2023/">
     <span class="fab fa-github"></span>
      
     
@@ -277,7 +279,10 @@ $(document).ready(function () {
 </div>
 
 
-<p>All homework assignments should be emailed to the instructor at <code>scheuerl@uw.edu</code> with the subject line <code>FISH 521 - HW?</code> where <code>?</code> is the assignment number.</p>
+<p>All homework assignments should be emailed to the instructor at
+<code>scheuerl@uw.edu</code> with the subject line
+<code>FISH 521 - HW?</code> where <code>?</code> is the assignment
+number.</p>
 <table class="table table-striped" style="width: auto !important; ">
 <caption>
 </caption>
@@ -303,7 +308,7 @@ Due date
 <tbody>
 <tr>
 <td style="text-align:center;width: 6em; ">
-3 Jan
+9 Jan
 </td>
 <td style="text-align:left;width: 20em; ">
 Focal paper &amp; relevant references <br>
@@ -312,7 +317,8 @@ Focal paper &amp; relevant references <br>
 5% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_01/hw_01_references.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_01/hw_01_references.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 10 Jan <br>
@@ -320,7 +326,7 @@ Focal paper &amp; relevant references <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-10 Jan
+16 Jan
 </td>
 <td style="text-align:left;width: 20em; ">
 Message boxes <br>
@@ -329,7 +335,8 @@ Message boxes <br>
 5% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_02/hw_02_message_box.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_02/hw_02_message_box.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 18 Jan <br>
@@ -337,7 +344,7 @@ Message boxes <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-17 Jan
+23 Jan
 </td>
 <td style="text-align:left;width: 20em; ">
 <i>Holiday - no assignment</i> <br>
@@ -353,7 +360,7 @@ Message boxes <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-24 Jan
+30 Jan
 </td>
 <td style="text-align:left;width: 20em; ">
 Draft proposal introduction <br>
@@ -362,7 +369,8 @@ Draft proposal introduction <br>
 15% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_04/hw_03_proposal_intro.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_04/hw_03_proposal_intro.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 31 Jan <br>
@@ -370,7 +378,7 @@ Draft proposal introduction <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-31 Jan
+6 Feb
 </td>
 <td style="text-align:left;width: 20em; ">
 Cover letter to journal <br>
@@ -379,7 +387,8 @@ Cover letter to journal <br>
 10% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_05/hw_04_cover_letter.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_05/hw_04_cover_letter.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 7 Feb <br>
@@ -387,7 +396,7 @@ Cover letter to journal <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-7 Feb
+13 Feb
 </td>
 <td style="text-align:left;width: 20em; ">
 Peer review of paper <br>
@@ -396,7 +405,8 @@ Peer review of paper <br>
 15% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_06/hw_05_peer_review.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_06/hw_05_peer_review.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 14 Feb <br>
@@ -404,7 +414,7 @@ Peer review of paper <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-14 Feb
+20 Feb
 </td>
 <td style="text-align:left;width: 20em; ">
 Tweet thread or blog post <br>
@@ -413,7 +423,8 @@ Tweet thread or blog post <br>
 10% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_07/hw_06_scicomm.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_07/hw_06_scicomm.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 22 Feb <br>
@@ -421,7 +432,7 @@ Tweet thread or blog post <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-21 Feb
+27 Feb
 </td>
 <td style="text-align:left;width: 20em; ">
 <i>Holiday - no assignment</i> <br>
@@ -437,7 +448,7 @@ Tweet thread or blog post <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-28 Feb
+6 Mar
 </td>
 <td style="text-align:left;width: 20em; ">
 Proposal presentation <br>
@@ -446,7 +457,8 @@ Proposal presentation <br>
 15% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_09/hw_07_presentations.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_09/hw_07_presentations.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 28 Feb<br>(In class) <br>
@@ -454,7 +466,7 @@ Proposal presentation <br>
 </tr>
 <tr>
 <td style="text-align:center;width: 6em; ">
-7 Mar
+13 Mar
 </td>
 <td style="text-align:left;width: 20em; ">
 Final proposal <br>
@@ -463,7 +475,8 @@ Final proposal <br>
 25% <br>
 </td>
 <td style="text-align:center;width: 8em; ">
-<a href="homework/week_10/hw_08_proposal.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></a>
+<a
+href="homework/week_10/hw_08_proposal.html"><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2fa4e7;overflow:visible;position:relative;"><path d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0L64-.0001c-35.35 0-64 28.65-64 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM96 280C96 293.3 106.8 304 120 304h144C277.3 304 288 293.3 288 280S277.3 256 264 256h-144C106.8 256 96 266.8 96 280zM264 352h-144C106.8 352 96 362.8 96 376s10.75 24 24 24h144c13.25 0 24-10.75 24-24S277.3 352 264 352z"></path></svg></a>
 </td>
 <td style="text-align:center;width: 8em; ">
 16 Mar <br>
