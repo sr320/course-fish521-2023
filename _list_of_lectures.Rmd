@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## week 1 ####
 intro <- list(
   title = "Introduction",
-  topics = c("Course overview", "Writing habits", "Searching the literature", "Reference management"),
+  topics = c("Course overview", "GitHub", "Writing habits", "Searching the literature", "Reference management"),
   pdf = c(""),
   rmd = c("lectures/week_01/lec_01_class_overview.Rmd"),
   html = c("lectures/week_01/lec_01_class_overview.html"),
@@ -20,6 +20,17 @@ intro <- list(
 )
 
 ## week 2 ####
+holiday_1 <- list(
+  title = "Martin Luther King Jr. Day",
+  topics = c("<i>Martin Luther King, Jr. Day</i>", "<b>No class</b>"),
+  pdf = c(""),
+  rmd = "",
+  html = "",
+  background = "",
+  zoom = ""
+)
+
+## week 3 ####
 proposals <- list(
   title = "Structuring a proposal",
   topics = c("Structuring a proposal", "Using a message box", "Writing an abstract"),
@@ -32,16 +43,6 @@ proposals <- list(
   zoom = ""
 )
 
-## week 3 ####
-holiday_1 <- list(
-  title = "Martin Luther King Jr. Day",
-  topics = c("<i>Martin Luther King, Jr. Day</i>", "<b>No class</b>"),
-  pdf = c(""),
-  rmd = "",
-  html = "",
-  background = "",
-  zoom = ""
-)
 
 ## week 4 ####
 papers <- list(

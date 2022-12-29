@@ -2,7 +2,7 @@
 title: "Course overview"
 subtitle: "Proposal writing & professional development<br>FISH 521"
 author: "Steven Roberts"
-date: "3 January 2022"
+date: "9 January 2023"
 output:
   ioslides_presentation:
     css: lecture_slides.css
@@ -139,7 +139,7 @@ Course logistics
 ## {.flexbox .vcenter .bigger}
 
 <font size="10">
-[__Course information__](https://uw-fish521.github.io/website/index.html)
+[__Course information__](https://sr320.github.io/course-fish521-2023)
 </font>
 
 

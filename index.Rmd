@@ -12,7 +12,7 @@ output:
 
 # Course overview
 
-This class was originally designed to help students prepare research proposals. It has undergone various modifications since its inception, as different instructors have been placed in charge of it, and as the needs of students have changed. The course still includes the development of scientific ideas into coherent proposals, but it now also addresses other forms of communication, and aspects of professional development to help graduate students during and after their time at the University of Washington.
+This class was originally designed to help students prepare research proposals. It has undergone various modifications since its inception, as different instructors have been placed in charge of it, and as the needs of students have changed. The course still includes the development of scientific ideas into coherent proposals, but it now also addresses other forms of communication, and aspects of professional development to help graduate students during and after their time at the University of Washington. *Foremost, the current implementation of the course is attributable to Dr. Mark Scheuerell who taught the course in 2022.*
 
 Before one can write a scientific proposal, one needs to know how scientific papers are conceptualized and written, as they are the basic template for proposals. Accordingly, the class will include the elements of crafting scientific papers, and each student will choose one to examine closely. This will clarify many lessons related to the structure of scientific papers, and the use of published literature and other sources of data and information. Scientific papers typically result from formal or informal proposals, and knowing how papers are written helps inform the process of developing proposals.
 
@@ -42,10 +42,10 @@ By the end of the quarter, students should be able to:
 
 # Instructor
 
-[**Mark Scheuerell**](https://fish.uw.edu/faculty/mark-scheuerell/)  
-Associate Professor, School of Aquatic & Fishery Sciences  
-220A FSH
-[scheuerl@uw.edu](mailto:scheuerl@uw.edu)
+[**Steven Roberts**](https://fish.uw.edu/faculty/mark-scheuerell/)  
+Professor, School of Aquatic & Fishery Sciences  
+FTR 230
+[sr320@uw.edu](mailto:sr320@uw.edu)
 
 <br>
 
@@ -56,7 +56,7 @@ Mondays from 1:30-4:20 in FSH 203
 
 #### Office hours
 
-By appointment
+[By appointment](https://d.pr/gsgxVJ)
 
 <br>
 
@@ -84,7 +84,6 @@ In addition, I encourage the following kinds of behaviors:
 
 * Gracefully accept constructive criticism
 
-Although I strive to create and use inclusive materials in this course, there may be overt or covert biases in the course material due to the lens with which it was written. Your suggestions about how to improve the value of diversity in this course are encouraged and appreciated.  
 
 **Please note**: If you believe you have been a victim of an alleged violation of the [Student Conduct Code](https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html) or you are aware of an alleged violation of the [Student Conduct Code](https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html), you have the right to [report it to the University](https://www.washington.edu/cssc/for-students-2/).
 
@@ -132,7 +131,7 @@ Students will be required to have a user account on [**GitHub**](https://github.
 
 # Teaching methodology
 
-This course will introduce new material primarily through prepared slides and hands-on demonstrations. Students will be expected to work both individually and collaboratively (to the extent possible given the current conditions); course content and evaluation will emphasize the communication of ideas and the ability to think critically more so than a specific pathway or method. Other areas of this website provide an overview of the topics to be covered, including links to weekly reading assignments, lecture materials, and homework assignments.
+This course will introduce new material primarily through prepared slides and hands-on demonstrations. Students will be expected to work both individually and collaboratively; course content and evaluation will emphasize the communication of ideas and the ability to think critically more so than a specific pathway or method. Other areas of this website provide an overview of the topics to be covered, including links to weekly reading assignments, lecture materials, and homework assignments.
 
 <br>
 
@@ -159,16 +158,6 @@ This course will require students to engage with the instructor and one another 
 # Academic integrity
 
 Faculty and students at the University of Washington are expected to maintain the highest standards of academic conduct, professional honesty, and personal integrity. Plagiarism, cheating, and other academic misconduct are serious violations of the [Student Conduct Code](https://www.washington.edu/cssc/for-students/academic-misconduct/). I have no reason to believe that anyone will violate the Student Conduct Code, but *I will have no choice* but to refer any suspected violation(s) to the College of the Environment for a Student Conduct Process hearing. Students who have been guilty of a violation will receive zero points for the assignment in question.
-
-<br>
-
-# COVID-19 Health and Safety
-
-To report a positive COVID-19 test result, close contact exposure or a related issue, follow the [COVID-19 Public Health Guidance and Requirements Flowchart](https://www.ehs.washington.edu/system/files/resources/COVID-19-public-health-flowchart.pdf) and notify EHS via [email](covidehc@uw.edu) or call 206.616.3344. For additional information, please see the [FAQ](https://www.washington.edu/coronavirus/student-faq/).
-
-### Face Coverings in the Classroom
-
-The health and safety of the University of Washington community are the institution's priorities. Please review and adhere to the [UW COVID Face Covering Policy](https://www.ehs.washington.edu/system/files/resources/COVID-19-face-cover-policy.pdf).
 
 <br>
 
