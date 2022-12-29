@@ -13,9 +13,10 @@
 
 <title>Proposal Writing and Professional Development for Graduate Students</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -64,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -84,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -141,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -174,8 +183,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -183,16 +192,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -309,7 +311,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -331,7 +333,7 @@ div.tocify {
   <a href="references.html">References</a>
 </li>
 <li>
-  <a href="https://github.com/UW-FISH521">
+  <a href="https://sr320.github.io/course-fish521-2023/">
     <span class="fab fa-github"></span>
      
     
@@ -346,8 +348,10 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Proposal Writing and Professional Development for Graduate Students</h1>
-<h3 class="subtitle">FISH 521     University of Washington     Winter 2022</h3>
+<h1 class="title toc-ignore">Proposal Writing and Professional
+Development for Graduate Students</h1>
+<h3 class="subtitle">FISH 521     University of Washington     Winter
+2023</h3>
 
 </div>
 
@@ -355,28 +359,69 @@ div.tocify {
 <p><br></p>
 <div id="course-overview" class="section level1">
 <h1>Course overview</h1>
-<p>This class was originally designed to help students prepare research proposals. It has undergone various modifications since its inception, as different instructors have been placed in charge of it, and as the needs of students have changed. The course still includes the development of scientific ideas into coherent proposals, but it now also addresses other forms of communication, and aspects of professional development to help graduate students during and after their time at the University of Washington.</p>
-<p>Before one can write a scientific proposal, one needs to know how scientific papers are conceptualized and written, as they are the basic template for proposals. Accordingly, the class will include the elements of crafting scientific papers, and each student will choose one to examine closely. This will clarify many lessons related to the structure of scientific papers, and the use of published literature and other sources of data and information. Scientific papers typically result from formal or informal proposals, and knowing how papers are written helps inform the process of developing proposals.</p>
-<p>Proposal development starts with an idea, which is then placed in the context of what is already known, and the needs in the scientific community and society at large for further information. Students will go through this process, learning the mechanics of proposal writing, and providing constructive feedback on written and oral presentations of student proposals.</p>
-<p>Another vital component of being a scientist is the ability to review colleagues’ work critically, but constructively. Once you become established, you will receive many manuscripts and grant proposals to review each year. While such reviews are usually anonymous (that is, the authors do not know your identity), editors and panelists know who you are and you will quickly establish a reputation as a reviewer. It is important that you criticize the work according to rigorous scientific standards, but you should keep in mind that your review may have significant effects on other people’s career and job prospects.</p>
-<p>Many of you already know that you need to produce a research proposal for your thesis work, to be submitted to your committee and to be included in your graduate student file. Guidelines for such proposals can be found on the SAFS web page. This class is a very good opportunity to work on your proposal, and I suggest that you use the time and feedback to produce at least a draft by the end of the class. I will be very happy to help you towards this aim, in class, outside class and in future.</p>
+<p>This class was originally designed to help students prepare research
+proposals. It has undergone various modifications since its inception,
+as different instructors have been placed in charge of it, and as the
+needs of students have changed. The course still includes the
+development of scientific ideas into coherent proposals, but it now also
+addresses other forms of communication, and aspects of professional
+development to help graduate students during and after their time at the
+University of Washington.</p>
+<p>Before one can write a scientific proposal, one needs to know how
+scientific papers are conceptualized and written, as they are the basic
+template for proposals. Accordingly, the class will include the elements
+of crafting scientific papers, and each student will choose one to
+examine closely. This will clarify many lessons related to the structure
+of scientific papers, and the use of published literature and other
+sources of data and information. Scientific papers typically result from
+formal or informal proposals, and knowing how papers are written helps
+inform the process of developing proposals.</p>
+<p>Proposal development starts with an idea, which is then placed in the
+context of what is already known, and the needs in the scientific
+community and society at large for further information. Students will go
+through this process, learning the mechanics of proposal writing, and
+providing constructive feedback on written and oral presentations of
+student proposals.</p>
+<p>Another vital component of being a scientist is the ability to review
+colleagues’ work critically, but constructively. Once you become
+established, you will receive many manuscripts and grant proposals to
+review each year. While such reviews are usually anonymous (that is, the
+authors do not know your identity), editors and panelists know who you
+are and you will quickly establish a reputation as a reviewer. It is
+important that you criticize the work according to rigorous scientific
+standards, but you should keep in mind that your review may have
+significant effects on other people’s career and job prospects.</p>
+<p>Many of you already know that you need to produce a research proposal
+for your thesis work, to be submitted to your committee and to be
+included in your graduate student file. Guidelines for such proposals
+can be found on the SAFS web page. This class is a very good opportunity
+to work on your proposal, and I suggest that you use the time and
+feedback to produce at least a draft by the end of the class. I will be
+very happy to help you towards this aim, in class, outside class and in
+future.</p>
 <p><br></p>
 </div>
 <div id="learning-objectives" class="section level1">
 <h1>Learning objectives</h1>
 <p>By the end of the quarter, students should be able to:</p>
 <ul>
-<li><p>search a publication database like Web of Science or Google Scholar for papers of interest</p></li>
-<li><p>use a message box to refine scientific questions and objectives</p></li>
-<li><p>write a cover letter for a publication that conveys the importance of the work and its relevance to the journal</p></li>
-<li><p>review a proposal or manuscript using language that is critical of the work, but not the authors themselves</p></li>
-<li><p>create a scientific presentation that conveys the question of interest, the study objective(s), and findings of interest</p></li>
+<li><p>search a publication database like Web of Science or Google
+Scholar for papers of interest</p></li>
+<li><p>use a message box to refine scientific questions and
+objectives</p></li>
+<li><p>write a cover letter for a publication that conveys the
+importance of the work and its relevance to the journal</p></li>
+<li><p>review a proposal or manuscript using language that is critical
+of the work, but not the authors themselves</p></li>
+<li><p>create a scientific presentation that conveys the question of
+interest, the study objective(s), and findings of interest</p></li>
 </ul>
 <p><br></p>
 </div>
 <div id="instructor" class="section level1">
 <h1>Instructor</h1>
-<p><a href="https://fish.uw.edu/faculty/mark-scheuerell/"><strong>Mark Scheuerell</strong></a><br />
+<p><a href="https://fish.uw.edu/faculty/mark-scheuerell/"><strong>Mark
+Scheuerell</strong></a><br />
 Associate Professor, School of Aquatic &amp; Fishery Sciences<br />
 220A FSH <a href="mailto:scheuerl@uw.edu">scheuerl@uw.edu</a></p>
 <p><br></p>
@@ -397,10 +442,19 @@ Associate Professor, School of Aquatic &amp; Fishery Sciences<br />
 </div>
 <div id="classroom-conduct" class="section level1">
 <h1>Classroom conduct</h1>
-<p>I am dedicated to providing a welcoming and supportive learning environment for all students, regardless of their background, identity, physical appearance, or manner of communication. Any form of language or behavior used to exclude, intimidate, or cause discomfort will not be tolerated. This applies to all course participants (instructor, students, guests). In order to foster a positive and professional learning environment, I ask the following:</p>
+<p>I am dedicated to providing a welcoming and supportive learning
+environment for all students, regardless of their background, identity,
+physical appearance, or manner of communication. Any form of language or
+behavior used to exclude, intimidate, or cause discomfort will not be
+tolerated. This applies to all course participants (instructor,
+students, guests). In order to foster a positive and professional
+learning environment, I ask the following:</p>
 <ul>
-<li><p>Please let me know if you have a name or set of preferred pronouns that you would like me to use</p></li>
-<li><p>Please let me know if <em>anyone</em> in class says something that makes you feel uncomfortable<sup>[<a href="#endnotes">1</a>]</sup></p></li>
+<li><p>Please let me know if you have a name or set of preferred
+pronouns that you would like me to use</p></li>
+<li><p>Please let me know if <em>anyone</em> in class says something
+that makes you feel uncomfortable<sup>[<a
+href="#endnotes">1</a>]</sup></p></li>
 </ul>
 <p>In addition, I encourage the following kinds of behaviors:</p>
 <ul>
@@ -409,107 +463,270 @@ Associate Professor, School of Aquatic &amp; Fishery Sciences<br />
 <li><p>Acknowledge different viewpoints and experiences</p></li>
 <li><p>Gracefully accept constructive criticism</p></li>
 </ul>
-<p>Although I strive to create and use inclusive materials in this course, there may be overt or covert biases in the course material due to the lens with which it was written. Your suggestions about how to improve the value of diversity in this course are encouraged and appreciated.</p>
-<p><strong>Please note</strong>: If you believe you have been a victim of an alleged violation of the <a href="https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html">Student Conduct Code</a> or you are aware of an alleged violation of the <a href="https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html">Student Conduct Code</a>, you have the right to <a href="https://www.washington.edu/cssc/for-students-2/">report it to the University</a>.</p>
+<p>Although I strive to create and use inclusive materials in this
+course, there may be overt or covert biases in the course material due
+to the lens with which it was written. Your suggestions about how to
+improve the value of diversity in this course are encouraged and
+appreciated.</p>
+<p><strong>Please note</strong>: If you believe you have been a victim
+of an alleged violation of the <a
+href="https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html">Student
+Conduct Code</a> or you are aware of an alleged violation of the <a
+href="https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html">Student
+Conduct Code</a>, you have the right to <a
+href="https://www.washington.edu/cssc/for-students-2/">report it to the
+University</a>.</p>
 <div id="title-ix" class="section level3">
 <h3>Title IX</h3>
-<p>For support, resources, and reporting options related to sex- and gender-based violence or harassment, visit <a href="https://www.washington.edu/titleix/">UW Title IX’s webpage</a>, specifically the <a href="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/181/2020/08/10185033/KYRR-guide-8-10-2020-LINKED.pdf">Know Your Rights &amp; Resources</a> guide.</p>
-<p>Please know that if you choose to disclose information to me about sex- or gender-based violence or harassment, I will connect you (or the person who experienced the conduct) with resources and individuals who can best provide support and options. You can also access those resources directly:</p>
+<p>For support, resources, and reporting options related to sex- and
+gender-based violence or harassment, visit <a
+href="https://www.washington.edu/titleix/">UW Title IX’s webpage</a>,
+specifically the <a
+href="https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/181/2020/08/10185033/KYRR-guide-8-10-2020-LINKED.pdf">Know
+Your Rights &amp; Resources</a> guide.</p>
+<p>Please know that if you choose to disclose information to me about
+sex- or gender-based violence or harassment, I will connect you (or the
+person who experienced the conduct) with resources and individuals who
+can best provide support and options. You can also access those
+resources directly:</p>
 <ul>
-<li><p><strong>Confidential</strong>: <a href="https://www.washington.edu/sexualassault/support/advocacy/">Confidential advocates</a> will not share information with others unless given express permission by the person who has experienced the harm or when required by law.</p></li>
-<li><p><strong>Private and/or anonymous</strong>: <a href="SafeCampus">SafeCampus</a> provides consultation and support and can connect you with additional resources if you want them.You can contact SafeCampus anonymously or share limited information when you call.</p></li>
+<li><p><strong>Confidential</strong>: <a
+href="https://www.washington.edu/sexualassault/support/advocacy/">Confidential
+advocates</a> will not share information with others unless given
+express permission by the person who has experienced the harm or when
+required by law.</p></li>
+<li><p><strong>Private and/or anonymous</strong>: <a
+href="SafeCampus">SafeCampus</a> provides consultation and support and
+can connect you with additional resources if you want them.You can
+contact SafeCampus anonymously or share limited information when you
+call.</p></li>
 </ul>
-<p>Please note that some senior leaders and other specified employees have been identified as “<a href="https://www.washington.edu/titleix/title-ix-officials-required-to-report/">Officials Required to Report</a>”. If an Official Required to Report learns of possible sex- or gender-based violence or harassment, they are required to call SafeCampus and report all the details they have in order to ensure that the person who experienced harm is offered support and reporting options.</p>
+<p>Please note that some senior leaders and other specified employees
+have been identified as “<a
+href="https://www.washington.edu/titleix/title-ix-officials-required-to-report/">Officials
+Required to Report</a>”. If an Official Required to Report learns of
+possible sex- or gender-based violence or harassment, they are required
+to call SafeCampus and report all the details they have in order to
+ensure that the person who experienced harm is offered support and
+reporting options.</p>
 <p><br></p>
 </div>
 </div>
 <div id="access-accommodations" class="section level1">
 <h1>Access &amp; accommodations</h1>
-<p>All students deserve access to the full range of learning experiences, and the University of Washington is committed to creating inclusive and accessible learning environments consistent with federal and state laws. If you feel like your performance in class is being impacted by your experiences outside of class, please talk with me.</p>
+<p>All students deserve access to the full range of learning
+experiences, and the University of Washington is committed to creating
+inclusive and accessible learning environments consistent with federal
+and state laws. If you feel like your performance in class is being
+impacted by your experiences outside of class, please talk with me.</p>
 <div id="disabilities" class="section level3">
 <h3>Disabilities</h3>
-<p>If you have already established accommodations with Disability Resources for Students (DRS), please communicate your approved accommodations to me at your earliest convenience so we can discuss your needs in this course. If you have not yet established services through DRS, but have a temporary health condition or permanent disability that requires accommodations (<em>e.g.</em>, mental health, learning, vision, hearing, physical impacts), you are welcome to contact DRS at 206-543-8924 or via <a href="mailto:uwdrs@uw.edu">email</a> or their <a href="https://depts.washington.edu/uwdrs/">website</a>. DRS offers resources and coordinates reasonable accommodations for students with disabilities and/or temporary health conditions. Reasonable accommodations are established through an interactive process between you, your instructor(s) and DRS.</p>
+<p>If you have already established accommodations with Disability
+Resources for Students (DRS), please communicate your approved
+accommodations to me at your earliest convenience so we can discuss your
+needs in this course. If you have not yet established services through
+DRS, but have a temporary health condition or permanent disability that
+requires accommodations (<em>e.g.</em>, mental health, learning, vision,
+hearing, physical impacts), you are welcome to contact DRS at
+206-543-8924 or via <a href="mailto:uwdrs@uw.edu">email</a> or their <a
+href="https://depts.washington.edu/uwdrs/">website</a>. DRS offers
+resources and coordinates reasonable accommodations for students with
+disabilities and/or temporary health conditions. Reasonable
+accommodations are established through an interactive process between
+you, your instructor(s) and DRS.</p>
 </div>
 <div id="religious-observances" class="section level3">
 <h3>Religious observances</h3>
-<p>Students who expect to miss class or assignments as a consequence of their religious observance will be provided with a reasonable accommodation to fulfill their academic responsibilities. Absence from class for religious reasons does not relieve students from responsibility for the course work required during the period of absence. It is the responsibility of the student to provide the instructor with advance notice of the dates of religious holidays on which they will be absent. Students who are absent will be offered an opportunity to make up the work, without penalty, within a reasonable time, as long as the student has made prior arrangements.</p>
+<p>Students who expect to miss class or assignments as a consequence of
+their religious observance will be provided with a reasonable
+accommodation to fulfill their academic responsibilities. Absence from
+class for religious reasons does not relieve students from
+responsibility for the course work required during the period of
+absence. It is the responsibility of the student to provide the
+instructor with advance notice of the dates of religious holidays on
+which they will be absent. Students who are absent will be offered an
+opportunity to make up the work, without penalty, within a reasonable
+time, as long as the student has made prior arrangements.</p>
 <p><br></p>
 </div>
 </div>
 <div id="excused-absence" class="section level1">
 <h1>Excused absence</h1>
-<p>Students are expected to attend class and to participate in all graded activities. A student who is anticipating being absent from class due to a Religious Accommodation activity needs to complete the Religious Accommodations request process by the second Friday of the quarter. Students who anticipate missing class due to attendance at academic conferences or field trips, or participation in university-sponsored activities should provide a written notice to the instructor ahead of the absence. The instructor will determine if the graded activity or exam can be rescheduled or if there is equivalent work that can be done as an equivalent, as determined by the instructor.</p>
+<p>Students are expected to attend class and to participate in all
+graded activities. A student who is anticipating being absent from class
+due to a Religious Accommodation activity needs to complete the
+Religious Accommodations request process by the second Friday of the
+quarter. Students who anticipate missing class due to attendance at
+academic conferences or field trips, or participation in
+university-sponsored activities should provide a written notice to the
+instructor ahead of the absence. The instructor will determine if the
+graded activity or exam can be rescheduled or if there is equivalent
+work that can be done as an equivalent, as determined by the
+instructor.</p>
 <p><br></p>
 </div>
 <div id="technology" class="section level1">
 <h1>Technology</h1>
-<p>This course will revolve around hands-on computing exercises that demonstrate the topics of interest. Therefore, students are strongly recommended to bring their own laptop to class, although students are certainly free to work with one another. <strong>For students without access to a personal laptop</strong>: it is possible to check out UW laptops for an entire quarter (see the <a href="https://education.uw.edu/admissions/office-of-student-services">Student Services office</a> for details).</p>
-<p>Students will be required to have a user account on <a href="https://github.com/"><strong>GitHub</strong></a>, which we will be using for file hosting and communications via its “Discussions” and “Issues” features. If you do not already have an account, you can sign up for a free one <a href="https://github.com/join?source=header-home">here</a>. The instructor will provide training on how to use the intended features in <strong>GitHub</strong>.</p>
+<p>This course will revolve around hands-on computing exercises that
+demonstrate the topics of interest. Therefore, students are strongly
+recommended to bring their own laptop to class, although students are
+certainly free to work with one another. <strong>For students without
+access to a personal laptop</strong>: it is possible to check out UW
+laptops for an entire quarter (see the <a
+href="https://education.uw.edu/admissions/office-of-student-services">Student
+Services office</a> for details).</p>
+<p>Students will be required to have a user account on <a
+href="https://github.com/"><strong>GitHub</strong></a>, which we will be
+using for file hosting and communications via its “Discussions” and
+“Issues” features. If you do not already have an account, you can sign
+up for a free one <a
+href="https://github.com/join?source=header-home">here</a>. The
+instructor will provide training on how to use the intended features in
+<strong>GitHub</strong>.</p>
 <p><br></p>
 </div>
 <div id="teaching-methodology" class="section level1">
 <h1>Teaching methodology</h1>
-<p>This course will introduce new material primarily through prepared slides and hands-on demonstrations. Students will be expected to work both individually and collaboratively (to the extent possible given the current conditions); course content and evaluation will emphasize the communication of ideas and the ability to think critically more so than a specific pathway or method. Other areas of this website provide an overview of the topics to be covered, including links to weekly reading assignments, lecture materials, and homework assignments.</p>
+<p>This course will introduce new material primarily through prepared
+slides and hands-on demonstrations. Students will be expected to work
+both individually and collaboratively (to the extent possible given the
+current conditions); course content and evaluation will emphasize the
+communication of ideas and the ability to think critically more so than
+a specific pathway or method. Other areas of this website provide an
+overview of the topics to be covered, including links to weekly reading
+assignments, lecture materials, and homework assignments.</p>
 <p><br></p>
 </div>
 <div id="communication" class="section level1">
 <h1>Communication</h1>
-<p>This course will involve a <em>lot</em> of communication between and among students and the instructor. Short questions should be addressed to me via email; I will try my best to respond to your message within 24 hours. Under more normal circumstances, detailed questions would be addressed to me in person–either after class or during a scheduled meeting. In this case, however, we will schedule one-on-one or group Zoom calls as needed.</p>
-<p>In addition to email and Zoom, we will use the “Issues” feature in <strong>GitHub</strong> to ask questions and assist others. Specifically, questions and answers can be posted to the issues in the course’s “assistance” repository <a href="https://github.com/FISH497/assistance/issues">here</a>.</p>
+<p>This course will involve a <em>lot</em> of communication between and
+among students and the instructor. Short questions should be addressed
+to me via email; I will try my best to respond to your message within 24
+hours. Under more normal circumstances, detailed questions would be
+addressed to me in person–either after class or during a scheduled
+meeting. In this case, however, we will schedule one-on-one or group
+Zoom calls as needed.</p>
+<p>In addition to email and Zoom, we will use the “Issues” feature in
+<strong>GitHub</strong> to ask questions and assist others.
+Specifically, questions and answers can be posted to the issues in the
+course’s “assistance” repository <a
+href="https://github.com/FISH497/assistance/issues">here</a>.</p>
 <p><br></p>
 </div>
 <div id="evaluation" class="section level1">
 <h1>Evaluation</h1>
-<p>Students will be evaluated on their knowledge of course content and their ability to communicate their understanding of the material via individual homework assignments. There will be 8 homework assignments, each with varying weight on your final grade. Please note, <strong>all assignments must be turned in to achieve a passing grade</strong>.</p>
-<p>Homework will be assigned each Monday and will be due by 1:30 PM the following Monday, with the exception of the final assignment, which will be due by 11:59 PM on March 16. Late homework will be assessed a penalty of 10% per day. The instructor will evaluate and return student homework assignments within one week of their due date. <strong>If for some reason you cannot meet the homework deadline, contact the instructor as soon as possible to discuss other options</strong>. Please see the <a href="homework.html">Homework</a> page for more details.</p>
+<p>Students will be evaluated on their knowledge of course content and
+their ability to communicate their understanding of the material via
+individual homework assignments. There will be 8 homework assignments,
+each with varying weight on your final grade. Please note, <strong>all
+assignments must be turned in to achieve a passing grade</strong>.</p>
+<p>Homework will be assigned each Monday and will be due by 1:30 PM the
+following Monday, with the exception of the final assignment, which will
+be due by 11:59 PM on March 16. Late homework will be assessed a penalty
+of 10% per day. The instructor will evaluate and return student homework
+assignments within one week of their due date. <strong>If for some
+reason you cannot meet the homework deadline, contact the instructor as
+soon as possible to discuss other options</strong>. Please see the <a
+href="homework.html">Homework</a> page for more details.</p>
 <div id="participation" class="section level3">
 <h3>Participation</h3>
-<p>This course will require students to engage with the instructor and one another in small groups. I expect all students to contribute to our discussions and I will use random call-outs as a means for hearing from everyone.</p>
+<p>This course will require students to engage with the instructor and
+one another in small groups. I expect all students to contribute to our
+discussions and I will use random call-outs as a means for hearing from
+everyone.</p>
 <p><br></p>
 </div>
 </div>
 <div id="academic-integrity" class="section level1">
 <h1>Academic integrity</h1>
-<p>Faculty and students at the University of Washington are expected to maintain the highest standards of academic conduct, professional honesty, and personal integrity. Plagiarism, cheating, and other academic misconduct are serious violations of the <a href="https://www.washington.edu/cssc/for-students/academic-misconduct/">Student Conduct Code</a>. I have no reason to believe that anyone will violate the Student Conduct Code, but <em>I will have no choice</em> but to refer any suspected violation(s) to the College of the Environment for a Student Conduct Process hearing. Students who have been guilty of a violation will receive zero points for the assignment in question.</p>
+<p>Faculty and students at the University of Washington are expected to
+maintain the highest standards of academic conduct, professional
+honesty, and personal integrity. Plagiarism, cheating, and other
+academic misconduct are serious violations of the <a
+href="https://www.washington.edu/cssc/for-students/academic-misconduct/">Student
+Conduct Code</a>. I have no reason to believe that anyone will violate
+the Student Conduct Code, but <em>I will have no choice</em> but to
+refer any suspected violation(s) to the College of the Environment for a
+Student Conduct Process hearing. Students who have been guilty of a
+violation will receive zero points for the assignment in question.</p>
 <p><br></p>
 </div>
 <div id="covid-19-health-and-safety" class="section level1">
 <h1>COVID-19 Health and Safety</h1>
-<p>To report a positive COVID-19 test result, close contact exposure or a related issue, follow the <a href="https://www.ehs.washington.edu/system/files/resources/COVID-19-public-health-flowchart.pdf">COVID-19 Public Health Guidance and Requirements Flowchart</a> and notify EHS via <a href="covidehc@uw.edu">email</a> or call 206.616.3344. For additional information, please see the <a href="https://www.washington.edu/coronavirus/student-faq/">FAQ</a>.</p>
+<p>To report a positive COVID-19 test result, close contact exposure or
+a related issue, follow the <a
+href="https://www.ehs.washington.edu/system/files/resources/COVID-19-public-health-flowchart.pdf">COVID-19
+Public Health Guidance and Requirements Flowchart</a> and notify EHS via
+<a href="covidehc@uw.edu">email</a> or call 206.616.3344. For additional
+information, please see the <a
+href="https://www.washington.edu/coronavirus/student-faq/">FAQ</a>.</p>
 <div id="face-coverings-in-the-classroom" class="section level3">
 <h3>Face Coverings in the Classroom</h3>
-<p>The health and safety of the University of Washington community are the institution’s priorities. Please review and adhere to the <a href="https://www.ehs.washington.edu/system/files/resources/COVID-19-face-cover-policy.pdf">UW COVID Face Covering Policy</a>.</p>
+<p>The health and safety of the University of Washington community are
+the institution’s priorities. Please review and adhere to the <a
+href="https://www.ehs.washington.edu/system/files/resources/COVID-19-face-cover-policy.pdf">UW
+COVID Face Covering Policy</a>.</p>
 <p><br></p>
 </div>
 </div>
 <div id="mental-health" class="section level1">
 <h1>Mental health</h1>
-<p>We are in the midst of an historic pandemic that is creating a variety of challenges for everyone. If you should feel like you need some help, please consider the following resources available to students.</p>
-<p><strong>If you are experiencing a life-threatening emergency, please dial 911</strong>.</p>
-<p><a href="http://www.crisisclinic.org/"><strong>Crisis Clinic</strong></a><br />
+<p>We are in the midst of an historic pandemic that is creating a
+variety of challenges for everyone. If you should feel like you need
+some help, please consider the following resources available to
+students.</p>
+<p><strong>If you are experiencing a life-threatening emergency, please
+dial 911</strong>.</p>
+<p><a href="http://www.crisisclinic.org/"><strong>Crisis
+Clinic</strong></a><br />
 Phone: 206-461-3222 or toll-free at 1-866-427-4747</p>
-<p><a href="https://www.washington.edu/counseling/services"><strong>UW Counseling Center</strong></a><br />
+<p><a href="https://www.washington.edu/counseling/services"><strong>UW
+Counseling Center</strong></a><br />
 Phone: 206-543-1240<br />
-<a href="https://www.washington.edu/counseling/services/crisis/">Immediate assistance</a></p>
-<p><a href="https://wellbeing.uw.edu/virtual-lets-talk/"><strong>Let’s Talk</strong></a></p>
-<p><a href="https://wellbeing.uw.edu/unit/hall-health"><strong>Hall Health Mental Health</strong></a></p>
+<a
+href="https://www.washington.edu/counseling/services/crisis/">Immediate
+assistance</a></p>
+<p><a href="https://wellbeing.uw.edu/virtual-lets-talk/"><strong>Let’s
+Talk</strong></a></p>
+<p><a href="https://wellbeing.uw.edu/unit/hall-health"><strong>Hall
+Health Mental Health</strong></a></p>
 <p><br></p>
 </div>
 <div id="safety" class="section level1">
 <h1>Safety</h1>
-<p>If you feel unsafe or at-risk in any way while taking any course, contact <a href="https://www.washington.edu/safecampus/">SafeCampus</a> (206-685-7233) anytime–no matter where you work or study–to anonymously discuss safety and well-being concerns for yourself or others. SafeCampus can provide individualized support, discuss short- and long-term solutions, and connect you with additional resources when requested. For a broader range of resources and assistance see the <a href="https://wellbeing.uw.edu/">Husky Health &amp; Well-Being website</a>.</p>
+<p>If you feel unsafe or at-risk in any way while taking any course,
+contact <a href="https://www.washington.edu/safecampus/">SafeCampus</a>
+(206-685-7233) anytime–no matter where you work or study–to anonymously
+discuss safety and well-being concerns for yourself or others.
+SafeCampus can provide individualized support, discuss short- and
+long-term solutions, and connect you with additional resources when
+requested. For a broader range of resources and assistance see the <a
+href="https://wellbeing.uw.edu/">Husky Health &amp; Well-Being
+website</a>.</p>
 <p><br></p>
 </div>
 <div id="food-pantry" class="section level1">
 <h1>Food Pantry</h1>
-<p>No student should ever have to choose between buying food or textbooks. The UW Food Pantry helps mitigate the social and academic effects of campus food insecurity. They aim to lessen the financial burden of purchasing food by providing students access to shelf-stable groceries, seasonal fresh produce, and hygiene products at <strong>no cost</strong>. Students can expect to receive 4 to 5 days’ worth of supplemental food support when they visit the Pantry, located on the north side of Poplar Hall at the corner of NE 41<sup>st</sup> St and Brooklyn Ave NE. Visit the <a href="https://uw.edu/anyhungryhusky">Any Hungry Husky website</a> for additional information, including operating hours and additional food support resources.</p>
+<p>No student should ever have to choose between buying food or
+textbooks. The UW Food Pantry helps mitigate the social and academic
+effects of campus food insecurity. They aim to lessen the financial
+burden of purchasing food by providing students access to shelf-stable
+groceries, seasonal fresh produce, and hygiene products at <strong>no
+cost</strong>. Students can expect to receive 4 to 5 days’ worth of
+supplemental food support when they visit the Pantry, located on the
+north side of Poplar Hall at the corner of NE 41<sup>st</sup> St and
+Brooklyn Ave NE. Visit the <a href="https://uw.edu/anyhungryhusky">Any
+Hungry Husky website</a> for additional information, including operating
+hours and additional food support resources.</p>
 <p><br></p>
 <div id="endnotes" class="section level2">
 <h2>Endnotes</h2>
-<p>[1] If the instructor should be the one to say something that makes a student uncomfortable, the student should feel free to contact the Director of the School of Aquatic and Fishery Sciences.</p>
+<p>[1] If the instructor should be the one to say something that makes a
+student uncomfortable, the student should feel free to contact the
+Director of the School of Aquatic and Fishery Sciences.</p>
 <p><br></p>
 <center>
-<em>This site was last updated at 09:39 on 18 Mar 2022</em>
+<em>This site was last updated at 14:02 on 29 Dec 2022</em>
 </center>
 </div>
 </div>
@@ -552,6 +769,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

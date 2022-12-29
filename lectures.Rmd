@@ -7,20 +7,19 @@ output: html_document
 
 #### Navigating a slide deck
 
-* Use the arrow keys (&#8592;/&#8594;) on your keyboard to go forward or backward
+-   Use the arrow keys (←/→) on your keyboard to go forward or backward
 
-* Press the "o" key on any slide to show you an overview of the slide deck
+-   Press the "o" key on any slide to show you an overview of the slide deck
 
-* In overview mode, click on a slide or press "esc" to zoom in on it
+-   In overview mode, click on a slide or press "esc" to zoom in on it
 
-* You can also print the slides to a pdf by selecting the "print" option from your browser's File menu.
+-   You can also print the slides to a pdf by selecting the "print" option from your browser's File menu.
 
 <br>
+
 ```{r, include=FALSE}
 library(tidyverse)
 ```
-
-
 
 ```{r child = "_timeline.Rmd", include=FALSE}
 ```
@@ -191,4 +190,3 @@ kableExtra::kable(syl_txt, format = "html", caption = " ",
   column_spec(c(1,3), width = "6em") %>%
   column_spec(4, width = "15em")
 ```
-
