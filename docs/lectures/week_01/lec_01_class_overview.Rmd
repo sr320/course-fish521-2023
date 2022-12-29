@@ -1,7 +1,7 @@
 ---
 title: "Course overview"
 subtitle: "Proposal writing & professional development<br>FISH 521"
-author: "Mark Scheuerell"
+author: "Steven Roberts"
 date: "3 January 2022"
 output:
   ioslides_presentation:
@@ -19,7 +19,7 @@ WHO AM I?
 </font>
 
 
-## Mark Scheuerell
+## Steven Roberts
 
 * Assistant Unit Leader, USGS WACFWRU (2019-present)
 
