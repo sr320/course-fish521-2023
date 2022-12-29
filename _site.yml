@@ -10,9 +10,9 @@ navbar:
       href: references.html
     - text: ""
       icon: fab fa-github
-      href: https://github.com/UW-FISH521
+      href: https://sr320.github.io/course-fish521-2023/
 output_dir: "docs"
 output:
   html_document:
-    theme: cerulean
+    theme: spacelab
     highlight: textmate
