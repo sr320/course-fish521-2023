@@ -16,6 +16,10 @@ output: html_document
 * You can also print the slides to a pdf by selecting the "print" option from your browser's File menu.
 
 <br>
+```{r, include=FALSE}
+library(tidyverse)
+```
+
 
 
 ```{r child = "_timeline.Rmd", include=FALSE}
