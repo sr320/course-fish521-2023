@@ -122,6 +122,7 @@ Course logistics
 </font>
 
 
+
 ## {.flexbox .vcenter .bigger}
 
 <font size="10">
@@ -251,6 +252,14 @@ Heard (2016, p22) writes
 ## {.flexbox .vcenter .bigger}
 
 <font size="10">
+Use of GitHub - hands on 
+</font>
+
+
+
+## {.flexbox .vcenter .bigger}
+
+<font size="10">
 Creative writing exercise
 </font>
 
@@ -327,3 +336,11 @@ Reference management
 | [Zotero](https://www.zotero.org/download/) | works with MS Word; browser plug-in | can be hard to share |
 | [Mendeley](https://www.mendeley.com/download-reference-manager/) | works with MS Word | can be hard to share |
 | [BibTeX](http://www.bibtex.org/) | works with LaTeX & Markdown | antiquated |
+
+
+
+
+
+<font size="10">
+Reference management - hands on assignment for next week 
+</font>
