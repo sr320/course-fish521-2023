@@ -35,9 +35,9 @@ names(week_lecs) <- paste0("L", seq(10))
 ## week 1
 week_lecs$L1 <- intro
 ## week 2
-week_lecs$L2 <- proposals
+week_lecs$L2 <- holiday_1
 ## week 3
-week_lecs$L3 <- holiday_1
+week_lecs$L3 <- proposals
 ## week 4
 week_lecs$L4 <- papers
 ## week 5

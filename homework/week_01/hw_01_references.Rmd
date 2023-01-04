@@ -2,7 +2,7 @@
 title: "Finding an interesting paper"
 subtitle: "Homework #1"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "3 January 2022"
+date: "9 January 2022"
 output:
   html_document:
     theme: cerulean

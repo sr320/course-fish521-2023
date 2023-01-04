@@ -15,7 +15,7 @@ library(magrittr)
 library(kableExtra)
 ```
 
-All homework assignments should be emailed to the instructor at `scheuerl@uw.edu` with the subject line `FISH 521 - HW?` where `?` is the assignment number.
+All homework assignments will be submitted via your personal repository in in the course GitHub organization or in some distinct method clearly identified (eg. posting to Discussion freature in assistance repository)
 
 ```{r week_hw, include = FALSE}
 ## empty list for labs
