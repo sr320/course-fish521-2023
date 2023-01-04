@@ -52,39 +52,18 @@ MY QUALIFICATIONS?
 
 ## Steven Roberts
 
-* Author of 65+ peer-reviewed papers
+* Author of 50+ peer-reviewed papers
 
 
 ## Steven Roberts
 
-* Author of 65+ peer-reviewed papers
+* Author of 50+ peer-reviewed papers
 
-* Associate Editor, *Limnology and Oceanography Letters* (2016-present)
+* Awarded 25 grants since 2013 ($7M)
 
-* Special Issue Editor, *Limnology and Oceanography* (2017-2018)
+* Reviewed grants, served on Grant Panels, served as Program Manager 
 
-* Associate Editor, *Ecological Research* (2007-2017)
-
-* Manuscript reviewer for 30+ journals
-
-* Outstanding Reviewer, *Canadian Journal of Fisheries and Aquatic Sciences* (2017) 
-
-
-## Steven Roberts
-
-* Author of 65+ peer-reviewed papers
-
-* Associate Editor, *Limnology and Oceanography Letters* (2016-present)
-
-* Special Issue Editor, *Limnology and Oceanography* (2017-2018)
-
-* Associate Editor, *Ecological Research* (2007-2017)
-
-* Manuscript reviewer for 30+ journals
-
-* Outstanding Reviewer, *Canadian Journal of Fisheries and Aquatic Sciences* (2017) 
-
-* Panel reviewer for NSF
+* Review many papers and editor for Marine Biotechnology, Scientific Data, Journal of Shellfish Research
 
 
 ## My role as course instructor
@@ -298,11 +277,13 @@ Searching the literature
 
 ## Finding papers of interest?
 
-* Word of mouth
+* Word of mouth (_Twitter_)
 
 * Journal table of contents
 
 * Online searches
+
+* Automatic Searches (_Google_)
 
 
 ## Web of Science (WOS)
@@ -341,6 +322,7 @@ Reference management
 
 | Software | Pros | Cons |
 |:--:|:---|:---|
+| [Paperpile](https://paperpile.com) | works with Google Docs, MS Word | not free |
 | [EndNote](https://endnote.com/downloads) | works with MS Word | not free |
 | [Zotero](https://www.zotero.org/download/) | works with MS Word; browser plug-in | can be hard to share |
 | [Mendeley](https://www.mendeley.com/download-reference-manager/) | works with MS Word | can be hard to share |

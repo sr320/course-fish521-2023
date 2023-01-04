@@ -12,7 +12,7 @@ output:
 
 # Course overview
 
-This class was originally designed to help students prepare research proposals. It has undergone various modifications since its inception, as different instructors have been placed in charge of it, and as the needs of students have changed. The course still includes the development of scientific ideas into coherent proposals, but it now also addresses other forms of communication, and aspects of professional development to help graduate students during and after their time at the University of Washington. *Foremost, the current implementation of the course is attributable to Dr. Mark Scheuerell who taught the course in 2022.*
+This class was originally designed to help students prepare research proposals. It has undergone various modifications since its inception, as different instructors have been placed in charge of it, and as the needs of students have changed. The course still includes the development of scientific ideas into coherent proposals, but it now also addresses other forms of communication, and aspects of professional development to help graduate students during and after their time at the University of Washington. *Foremost, the current implementation of the course is primarily attributable to Dr. Mark Scheuerell who taught the course in 2022.*
 
 Before one can write a scientific proposal, one needs to know how scientific papers are conceptualized and written, as they are the basic template for proposals. Accordingly, the class will include the elements of crafting scientific papers, and each student will choose one to examine closely. This will clarify many lessons related to the structure of scientific papers, and the use of published literature and other sources of data and information. Scientific papers typically result from formal or informal proposals, and knowing how papers are written helps inform the process of developing proposals.
 
@@ -28,31 +28,29 @@ Many of you already know that you need to produce a research proposal for your t
 
 By the end of the quarter, students should be able to:
 
-* search a publication database like Web of Science or Google Scholar for papers of interest
+-   have exposure to a variety of recommendations on effective professional development including writing
 
-* use a message box to refine scientific questions and objectives
+-   search a publication database like Web of Science or Google Scholar for papers of interest
 
-* write a cover letter for a publication that conveys the importance of the work and its relevance to the journal
+-   write a cover letter for a publication that conveys the importance of the work and its relevance to the journal
 
-* review a proposal or manuscript using language that is critical of the work, but not the authors themselves
+-   review a proposal or manuscript using language that is critical of the work, but not the authors themselves
 
-* create a scientific presentation that conveys the question of interest, the study objective(s), and findings of interest 
+-   create a scientific presentation that conveys the question of interest, the study objective(s), and findings of interest
 
 <br>
 
 # Instructor
 
-[**Steven Roberts**](https://fish.uw.edu/faculty/mark-scheuerell/)  
-Professor, School of Aquatic & Fishery Sciences  
-FTR 230
-[sr320@uw.edu](mailto:sr320@uw.edu)
+[**Steven Roberts**](https://fish.uw.edu/faculty/mark-scheuerell/)\
+Professor, School of Aquatic & Fishery Sciences\
+FTR 230 [sr320\@uw.edu](mailto:sr320@uw.edu)
 
 <br>
 
 # Meeting times & locations
 
 Mondays from 1:30-4:20 in FSH 203
-
 
 #### Office hours
 
@@ -70,34 +68,33 @@ None.
 
 I am dedicated to providing a welcoming and supportive learning environment for all students, regardless of their background, identity, physical appearance, or manner of communication. Any form of language or behavior used to exclude, intimidate, or cause discomfort will not be tolerated. This applies to all course participants (instructor, students, guests). In order to foster a positive and professional learning environment, I ask the following:
 
-* Please let me know if you have a name or set of preferred pronouns that you would like me to use
+-   Please let me know if you have a name or set of preferred pronouns that you would like me to use
 
-* Please let me know if *anyone* in class says something that makes you feel uncomfortable<sup>[[1](#endnotes)]</sup>
+-   Please let me know if *anyone* in class says something that makes you feel uncomfortable<sup>[[1](#endnotes)]</sup>
 
 In addition, I encourage the following kinds of behaviors:
 
-* Use welcoming and inclusive language
+-   Use welcoming and inclusive language
 
-* Show courtesy and respect towards others
+-   Show courtesy and respect towards others
 
-* Acknowledge different viewpoints and experiences
+-   Acknowledge different viewpoints and experiences
 
-* Gracefully accept constructive criticism
-
+-   Gracefully accept constructive criticism
 
 **Please note**: If you believe you have been a victim of an alleged violation of the [Student Conduct Code](https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html) or you are aware of an alleged violation of the [Student Conduct Code](https://www.washington.edu/admin/rules/policies/WAC/478-121TOC.html), you have the right to [report it to the University](https://www.washington.edu/cssc/for-students-2/).
 
 ### Title IX
 
-For support, resources, and reporting options related to sex- and gender-based violence or harassment, visit [UW Title IX’s webpage](https://www.washington.edu/titleix/), specifically the [Know Your Rights & Resources](https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/181/2020/08/10185033/KYRR-guide-8-10-2020-LINKED.pdf) guide. 
+For support, resources, and reporting options related to sex- and gender-based violence or harassment, visit [UW Title IX's webpage](https://www.washington.edu/titleix/), specifically the [Know Your Rights & Resources](https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/181/2020/08/10185033/KYRR-guide-8-10-2020-LINKED.pdf) guide.
 
 Please know that if you choose to disclose information to me about sex- or gender-based violence or harassment, I will connect you (or the person who experienced the conduct) with resources and individuals who can best provide support and options. You can also access those resources directly:
 
-* **Confidential**: [Confidential advocates](https://www.washington.edu/sexualassault/support/advocacy/) will not share information with others unless given express permission by the person who has experienced the harm or when required by law.
+-   **Confidential**: [Confidential advocates](https://www.washington.edu/sexualassault/support/advocacy/) will not share information with others unless given express permission by the person who has experienced the harm or when required by law.
 
-* **Private and/or anonymous**: [SafeCampus](SafeCampus) provides consultation and support and can connect you with additional resources if you want them.You can contact SafeCampus anonymously or share limited information when you call.
+-   **Private and/or anonymous**: [SafeCampus](SafeCampus) provides consultation and support and can connect you with additional resources if you want them.You can contact SafeCampus anonymously or share limited information when you call.
 
-Please note that some senior leaders and other specified employees have been identified as "[Officials Required to Report](https://www.washington.edu/titleix/title-ix-officials-required-to-report/)". If an Official Required to Report learns of possible sex- or gender-based violence or harassment, they are required to call SafeCampus and report all the details they have in order to ensure that the person who experienced harm is offered support and reporting options.  
+Please note that some senior leaders and other specified employees have been identified as "[Officials Required to Report](https://www.washington.edu/titleix/title-ix-officials-required-to-report/)". If an Official Required to Report learns of possible sex- or gender-based violence or harassment, they are required to call SafeCampus and report all the details they have in order to ensure that the person who experienced harm is offered support and reporting options.
 
 <br>
 
@@ -107,7 +104,7 @@ All students deserve access to the full range of learning experiences, and the U
 
 ### Disabilities
 
-If you have already established accommodations with Disability Resources for Students (DRS), please communicate your approved accommodations to me at your earliest convenience so we can discuss your needs in this course. If you have not yet established services through DRS, but have a temporary health condition or permanent disability that requires accommodations (*e.g.*, mental health, learning, vision, hearing, physical impacts), you are welcome to contact DRS at 206-543-8924 or via [email](mailto:uwdrs@uw.edu) or their [website](https://depts.washington.edu/uwdrs/). DRS offers resources and coordinates reasonable accommodations for students with disabilities and/or temporary health conditions.  Reasonable accommodations are established through an interactive process between you, your instructor(s) and DRS.
+If you have already established accommodations with Disability Resources for Students (DRS), please communicate your approved accommodations to me at your earliest convenience so we can discuss your needs in this course. If you have not yet established services through DRS, but have a temporary health condition or permanent disability that requires accommodations (*e.g.*, mental health, learning, vision, hearing, physical impacts), you are welcome to contact DRS at 206-543-8924 or via [email](mailto:uwdrs@uw.edu) or their [website](https://depts.washington.edu/uwdrs/). DRS offers resources and coordinates reasonable accommodations for students with disabilities and/or temporary health conditions. Reasonable accommodations are established through an interactive process between you, your instructor(s) and DRS.
 
 ### Religious observances
 
@@ -127,6 +124,10 @@ This course will revolve around hands-on computing exercises that demonstrate th
 
 Students will be required to have a user account on [**GitHub**](https://github.com/), which we will be using for file hosting and communications via its "Discussions" and "Issues" features. If you do not already have an account, you can sign up for a free one [here](https://github.com/join?source=header-home). The instructor will provide training on how to use the intended features in **GitHub**.
 
+Use of GitHub will include but not limited to establishment of a repository where assignments will turned in. Specifically you will be invited to an GitHub Organization - <https://github.com/course-fish521-2023>; where you will establish a Private Repository ([example](https://github.com/course-fish521-2023/Student_Example)), and use the [assistance](https://github.com/course-fish521-2023/assistance) repository for class discourse.
+
+Our class also has access to Rstudio Server hosted by UW-IT <https://jupyter.rttl.uw.edu/2023-winter-fish-521-a/user-redirect/rstudio>. The degree to which this resource will be used is likely limited, but I wanted to expose you to the resource.
+
 <br>
 
 # Teaching methodology
@@ -137,21 +138,25 @@ This course will introduce new material primarily through prepared slides and ha
 
 # Communication
 
-This course will involve a *lot* of communication between and among students and the instructor. Short questions should be addressed to me via email; I will try my best to respond to your message within 24 hours. Under more normal circumstances, detailed questions would be addressed to me in person--either after class or during a scheduled meeting. In this case, however, we will schedule one-on-one or group Zoom calls as needed.
+This course will involve a *lot* of communication between and among students, the instructor, and guest speakers.
 
-In addition to email and Zoom, we will use the "Issues" feature in **GitHub** to ask questions and assist others. Specifically, questions and answers can be posted to the issues in the course's "assistance" repository [here](https://github.com/FISH497/assistance/issues).
+Course related communication will predominantly be done on GitHub. Specifically using the [Discussion feature in the assistance repo](https://github.com/course-fish521-2023/assistance/discussions). Any personal communication should be addressed to me via email. Additionally you are welcome to schedule a meeting with me using the following link: <https://d.pr/gsgxVJ>
+
+In addition to Discusssions, we will use the "Issues" feature in **GitHub** to ask questions and assist others.
 
 <br>
 
 # Evaluation
 
-Students will be evaluated on their knowledge of course content and their ability to communicate their understanding of the material via individual homework assignments. There will be 8 homework assignments, each with varying weight on your final grade. Please note, **all assignments must be turned in to achieve a passing grade**.
+Students will be evaluated on their knowledge of course content and their ability to communicate their understanding of the material via individual homework assignments. There will be 9 homework assignments, each with varying weight on your final grade. Please note, **all assignments must be turned in to achieve a passing grade**.
 
 Homework will be assigned each Monday and will be due by 1:30 PM the following Monday, with the exception of the final assignment, which will be due by 11:59 PM on March 16. Late homework will be assessed a penalty of 10% per day. The instructor will evaluate and return student homework assignments within one week of their due date. **If for some reason you cannot meet the homework deadline, contact the instructor as soon as possible to discuss other options**. Please see the [Homework](homework.html) page for more details.
 
+Home work will be turned in by pushing commits to your personal GitHub repository in the course organization.
+
 ### Participation
 
-This course will require students to engage with the instructor and one another in small groups. I expect all students to contribute to our discussions and I will use random call-outs as a means for hearing from everyone. 
+This course will require students to engage with the instructor and one another in small groups. I expect all students to contribute to our discussions and I will use random call-outs as a means for hearing from everyone.
 
 <br>
 
@@ -165,16 +170,16 @@ Faculty and students at the University of Washington are expected to maintain th
 
 We are in the midst of an historic pandemic that is creating a variety of challenges for everyone. If you should feel like you need some help, please consider the following resources available to students.
 
-**If you are experiencing a life-threatening emergency, please dial 911**.  
+**If you are experiencing a life-threatening emergency, please dial 911**.
 
-[**Crisis Clinic**](http://www.crisisclinic.org/)  
-Phone: 206-461-3222 or toll-free at 1-866-427-4747   
+[**Crisis Clinic**](http://www.crisisclinic.org/)\
+Phone: 206-461-3222 or toll-free at 1-866-427-4747
 
-[**UW Counseling Center**](https://www.washington.edu/counseling/services)  
-Phone: 206-543-1240  
+[**UW Counseling Center**](https://www.washington.edu/counseling/services)\
+Phone: 206-543-1240\
 [Immediate assistance](https://www.washington.edu/counseling/services/crisis/)
 
-[**Let’s Talk**](https://wellbeing.uw.edu/virtual-lets-talk/)
+[**Let's Talk**](https://wellbeing.uw.edu/virtual-lets-talk/)
 
 [**Hall Health Mental Health**](https://wellbeing.uw.edu/unit/hall-health)
 
@@ -182,7 +187,7 @@ Phone: 206-543-1240
 
 # Safety
 
-If you feel unsafe or at-risk in any way while taking any course, contact [SafeCampus](https://www.washington.edu/safecampus/) (206-685-7233) anytime&ndash;no matter where you work or study&ndash;to anonymously discuss safety and well-being concerns for yourself or others. SafeCampus can provide individualized support, discuss short- and long-term solutions, and connect you with additional resources when requested. For a broader range of resources and assistance see the [Husky Health & Well-Being website](https://wellbeing.uw.edu/).
+If you feel unsafe or at-risk in any way while taking any course, contact [SafeCampus](https://www.washington.edu/safecampus/) (206-685-7233) anytime--no matter where you work or study--to anonymously discuss safety and well-being concerns for yourself or others. SafeCampus can provide individualized support, discuss short- and long-term solutions, and connect you with additional resources when requested. For a broader range of resources and assistance see the [Husky Health & Well-Being website](https://wellbeing.uw.edu/).
 
 <br>
 
@@ -192,11 +197,10 @@ No student should ever have to choose between buying food or textbooks. The UW F
 
 <br>
 
-## Endnotes
+## Endnotes {#endnotes}
 
 [1] If the instructor should be the one to say something that makes a student uncomfortable, the student should feel free to contact the Director of the School of Aquatic and Fishery Sciences.
 
 <br>
 
 <center>*This site was last updated at `r format(Sys.time(), "%H:%M")` on `r format(Sys.Date(), "%d %b %Y")`*</center>
-

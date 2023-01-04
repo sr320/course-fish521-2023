@@ -15,7 +15,7 @@ focal_paper <- list(
   pdf = "",
   rmd = "",
   html = "homework/week_01/hw_01_references.html",
-  due_date = "10 Jan",
+  due_date = "16 Jan",
   percent = "5%"
 )
 
@@ -26,18 +26,18 @@ message_box <- list(
   pdf = "",
   rmd = "",
   html = "homework/week_02/hw_02_message_box.html",
-  due_date = "18 Jan",
+  due_date = "23 Jan",
   percent = "5%"
 )
 
 ## week 3
 holiday_1 <- list(
   title = "",
-  topics = c("<i>Holiday - no assignment</i>"),
+  topics = c("<i>TBD</i>"),
   pdf = "",
   rmd = "",
   html = "",
-  due_date = "",
+  due_date = "30 Jan",
   percent = ""
 )
 
@@ -48,7 +48,7 @@ proposal_draft <- list(
   pdf = "",
   rmd = "",
   html = "homework/week_04/hw_03_proposal_intro.html",
-  due_date = "31 Jan",
+  due_date = "6 Feb",
   percent = "15%"
 )
 
@@ -59,7 +59,7 @@ cover_letter <- list(
   pdf = "",
   rmd = "",
   html = "homework/week_05/hw_04_cover_letter.html",
-  due_date = "7 Feb",
+  due_date = "13 Feb",
   percent = "10%"
 )
 
@@ -70,7 +70,7 @@ review_draft <- list(
   pdf = "",
   rmd = "",
   html = "homework/week_06/hw_05_peer_review.html",
-  due_date = "14 Feb",
+  due_date = "20 Feb",
   percent = "15%"
 )
 
@@ -81,18 +81,18 @@ scicomm <- list(
   pdf = "",
   rmd = "",
   html = "homework/week_07/hw_06_scicomm.html",
-  due_date = "22 Feb",
+  due_date = "27 Feb",
   percent = "10%"
 )
 
 ## week 8
 holiday_2 <- list(
   title = "",
-  topics = c("<i>Holiday - no assignment</i>"),
+  topics = c("<i>TBD</i>"),
   pdf = "",
   rmd = "",
   html = "",
-  due_date = "",
+  due_date = "6 Mar",
   percent = ""
 )
 
