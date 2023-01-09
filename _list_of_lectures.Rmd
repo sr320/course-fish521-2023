@@ -33,10 +33,10 @@ holiday_1 <- list(
 ## week 3 ####
 proposals <- list(
   title = "Structuring a proposal",
-  topics = c("Structuring a proposal", "Using a message box", "Writing an abstract"),
+  topics = c("Guest:Dr. Huffmyer", "Structuring a proposal", "Using a message box", "Writing an abstract"),
   pdf = c(""),
   rmd = c("lectures/week_02/lec_02_proposals_abstracts.Rmd"),
-  html = c("lectures/week_02/lec_02_proposals_abstracts.html"),
+  #html = c("lectures/week_02/lec_02_proposals_abstracts.html"),
   background = c("[de Vries' proposal recipe](references/proposal_recipe.jpg)",
                  "[Message Box](references/message_box.pdf)",
                  "[Nature abstract](references/nature_summary_paragraph.pdf)"),
@@ -47,10 +47,10 @@ proposals <- list(
 ## week 4 ####
 papers <- list(
   title = "Structuring a manuscript",
-  topics = c("Manuscript life cycles", "Authorship & contributions", "Manuscript structure"),
+  topics = c("Guest:Dr. George", "Manuscript life cycles", "Authorship & contributions", "Manuscript structure"),
   pdf = c(""),
   rmd = c("lectures/week_04/lec_03_manuscripts.Rmd"),
-  html = c("lectures/week_04/lec_03_manuscripts.html"),
+  #html = c("lectures/week_04/lec_03_manuscripts.html"),
   background = c("[Weltzin et al (2006)](references/Weltzin_ecology_authorship.pdf)",
                  "[Liboiron et al (2017)](references/Liboiron_equity_authorship.pdf)",
                  "[Cooke et al (2021)](references/Cooke_10_rules_authorship.pdf)"),
@@ -63,7 +63,7 @@ submission <- list(
   topics = c("Choosing a journal & author guidelines", "Writing a cover letter", "Supplementary material & reproducibility"),
   pdf = c(""),
   rmd = c(""),
-  html = c("lectures/week_05/lec_04_manuscripts_2.html"),
+  #html = c("lectures/week_05/lec_04_manuscripts_2.html"),
   background = c("[Taylor & Francis cover letter](references/cover_letter_template.pdf)",
                  "[Marwick et al (2018)](references/Marwick_etal_2018_research_compendia.pdf)",
                  "[Cooper & Hsing (2017)](references/BES_guide_to_reproducible_code.pdf)"),
@@ -76,7 +76,7 @@ reviewing <- list(
   topics = c("Reviewing a manuscript/proposal", "Author responses & rebuttals"),
   pdf = c(""),
   rmd = c(""),
-  html = c("lectures/week_06/lec_05_reviewing.html"),
+  #html = c("lectures/week_06/lec_05_reviewing.html"),
   background = c("[Silbiger & Stubler (2019)](references/Silbiger_2019_peer_review_urm.pdf)",
                  "[Clements (2020)](references/Clements_2020_prig_peer_review.pdf)",
                  "[Gerwing et al (2020)](references/Gerwing_2020_prof_peer_review.pdf)",
@@ -91,7 +91,7 @@ presentations <- list(
   topics = c("Scientific presentations", "Creating a website", "Blogs & social media"),
   pdf = c(""),
   rmd = c(""),
-  html = c("lectures/week_07/lec_06_scicomm.html"),
+  #html = c("lectures/week_07/lec_06_scicomm.html"),
   background = c("[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)",
                  "[Website via Markdown](lectures/week_07/lec_06b_websites.html)",
                  "[Bik & Goldstein (2013)](references/Bik_2013_intro_social_media.pdf)",
@@ -118,7 +118,7 @@ proposal_presentations <- list(
   topics = c("Student presentations of proposals"),
   pdf = c(""),
   rmd = c(""),
-  html = c("lectures/week_09/lec_07_presentations.html"),
+  #html = c("lectures/week_09/lec_07_presentations.html"),
   background = c(""),
   zoom = ""
 )
@@ -129,7 +129,7 @@ careers <- list(
   topics = c("Mentoring", "Career panel"),
   pdf = c(""),
   rmd = c(""),
-  html = c("https://career-panel.netlify.app/"),
+  #html = c("https://career-panel.netlify.app/"),
   background = c("[Hampton & Labou (2017)](references/Hampton_2017_careers_in_ecology.pdf)"),
   zoom = ""
 )
