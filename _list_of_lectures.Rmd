@@ -22,7 +22,7 @@ intro <- list(
 ## week 2 ####
 holiday_1 <- list(
   title = "Martin Luther King Jr. Day",
-  topics = c("<i>Martin Luther King, Jr. Day</i>", "<b>No class</b>", "Assignment"),
+  topics = c("<i>Martin Luther King, Jr. Day</i>", "<b>No class</b>", "Assignment: see homework tab"),
   pdf = c(""),
   rmd = "",
   html = "",

@@ -22,10 +22,10 @@ focal_paper <- list(
 ## week 2
 message_box <- list(
   title = "",
-  topics = c("Message boxes"),
+  topics = c("Papers"),
   pdf = "",
   rmd = "",
-  html = "homework/week_02/hw_02_message_box.html",
+  html = "homework/week_02/hw_02_papers.html",
   due_date = "23 Jan",
   percent = "5%"
 )
