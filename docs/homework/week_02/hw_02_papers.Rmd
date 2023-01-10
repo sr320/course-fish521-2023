@@ -18,24 +18,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-GOGGOOGOGOGOGOOGOG
+
 
 ## Background
 
-Your assignment this week is to draft the introduction and rationale for a research proposal based on your area of research. As we discussed in class, this is an important part of every proposal because it sets the stage by providing background information and justification for the proposed research (ie, "Why is this topic important?").
+This short assignment is based on last weeks discussion.
+
 
 ## Instructions
 
-Write a draft consisting of 3 paragraphs with the following general structure:
 
-1) What is the problem/question and why is it important?
 
-2) What do we know and what is lacking in our understanding?
-
-3) What are the 2-3 objectives and specific hypotheses/questions?
-
-Make sure to cite all relevant references and include them in a section labeled "References". If you are so inclined, and you think it would help communicate the ideas in your proposal, feel free to also include a figure or schematic (this is not required, though).
 
 ## Submission
 
-When you are finished, attach your Word document to an email or provide a link to a Google document, such that Mark will be able to provide comments directly on the draft itself (ie, do not paste it into the body of an email)
