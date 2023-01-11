@@ -18,17 +18,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-
-
 ## Background
 
 This short assignment is based on last weeks discussion.
 
-
 ## Instructions
 
+Explore the features on the reference managers mentioned last week.
+Establish one (or more if you want to compare) reference manager.
+Add a few papers, read some abstracts.
+
+### Task 1
+
+Indicate what reference manager you are using, and indicate your favorite feature, and what is one thing you find to be missing. 
 
 
+### Task 2
 
-## Submission
+Establish at least two different instances of a service that automatically pushes select paper to you (eg via email). Describe what these to instances and how you set them up. 
+For instance you good use Google Scholar, Web of Science, NCBI, Journals, Society, develop/leverage an automated bot.
 
+
+---
+
+**Note:** For any assignment if you have any questions please use the Discussion feature in the assistance repository found in our class organization on GitHub. 

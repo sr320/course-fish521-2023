@@ -33,12 +33,12 @@ message_box <- list(
 ## week 3
 holiday_1 <- list(
   title = "",
-  topics = c("<i>TBD</i>"),
+  topics = c("Message Box"),
   pdf = "",
   rmd = "",
-  html = "",
+  html = "homework/week_03/hw_02_message_box.html",
   due_date = "30 Jan",
-  percent = ""
+  percent = "5%"
 )
 
 ## week 4
@@ -115,7 +115,7 @@ proposal_final <- list(
   rmd = "",
   html = "homework/week_10/hw_08_proposal.html",
   due_date = "16 Mar",
-  percent = "25%"
+  percent = "20%"
 )
 ```
 

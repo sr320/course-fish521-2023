@@ -1,8 +1,8 @@
 ---
 title: "Using a Message Box"
-subtitle: "Homework #2"
+subtitle: "Homework #3"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "10 January 2022"
+date: "23 January 2022"
 output:
   html_document:
     theme: cerulean
@@ -32,6 +32,6 @@ Complete a message box with the intention of targeting a granting agency (ie, th
 
 You have 2 options for submitting this assignment:
 
-* print a message box, fill it out in pencil/ink, scan it or take a picture of it, and then email it to Mark
+* Take a picture of your message box and include in your GitHub repository
 
-* write out each of the sections in a Word or Google doc, and then send the doc (or link) to Mark
+* write out each of the sections in a Word or Google doc, and include it in your GitHub Repository
