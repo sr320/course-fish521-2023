@@ -2,7 +2,7 @@
 title: "Proposal introduction & rationale"
 subtitle: "Homework #3"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "24 January 2022"
+date: "23 January 2022"
 output:
   html_document:
     theme: cerulean
@@ -36,4 +36,4 @@ Make sure to cite all relevant references and include them in a section labeled 
 
 ## Submission
 
-When you are finished, attach your Word document to an email or provide a link to a Google document, such that Mark will be able to provide comments directly on the draft itself (ie, do not paste it into the body of an email)
+Please submit in the respect homework directory in your GitHub Repository. Please confirm it is pushed to GitHub and not only on your local computer. 
