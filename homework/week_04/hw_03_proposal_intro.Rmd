@@ -36,4 +36,4 @@ Make sure to cite all relevant references and include them in a section labeled 
 
 ## Submission
 
-Please submit in the respect homework directory in your GitHub Repository. Please confirm it is pusched to GitHub and not only on your local computer. 
+Please submit in the respect homework directory in your GitHub Repository. Please confirm it is pushed to GitHub and not only on your local computer. 
