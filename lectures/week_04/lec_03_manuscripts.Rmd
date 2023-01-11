@@ -1,8 +1,8 @@
 ---
 title: "Publishing a scientific paper"
 subtitle: "Proposal writing & professional development<br>FISH 521"
-author: "Mark Scheuerell"
-date: "24 January 2022"
+author: 
+date: "23 January 2023"
 output:
   ioslides_presentation:
     css: lecture_slides.css
