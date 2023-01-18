@@ -153,24 +153,6 @@ Outline *what* will happen & *when* it will happen
 * Can use Excel or many R packages (eg, `{gantrify}`)
 
 
-## Gantt chart
-
-```{r gantt}
-library("ganttrify")
-
-dat <- data.frame(wp = LETTERS[1:4],
-                  activity = c("Collect data", "Analyze data",
-                               "Outreach", "Write report"),
-                  start_date = c(1, 4, 7, 10),
-                  end_date = c(5, 7, 9, 12))
-ganttrify(project = dat,
-          hide_wp = TRUE,
-          size_text_relative = 1.2, 
-          mark_quarters = TRUE,
-          project_start_date = "2022-06",
-          font_family = "Roboto Condensed")
-```
-
 
 ## Body of proposal | Expected results & interpretation  
 
