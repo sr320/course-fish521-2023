@@ -14,5 +14,5 @@ navbar:
 output_dir: "docs"
 output:
   html_document:
-    theme: spacelab
+    theme: darkly
     highlight: textmate
