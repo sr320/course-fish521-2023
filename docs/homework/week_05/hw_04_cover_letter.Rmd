@@ -2,7 +2,7 @@
 title: "Writing a cover letter"
 subtitle: "Homework #4"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "31 January 2022"
+date: "06 Febuary 2023"
 output:
   html_document:
     theme: cerulean
@@ -25,7 +25,7 @@ Write a cover letter for a submission to a journal using the template below. Bas
 
 ## Submission
 
-When you are finished, push to your GitHub rep0.
+When you are finished, push to your GitHub repo.
 
 
 ***
