@@ -206,7 +206,7 @@ Taylor & Francis
 
 * Use the [Up-Goer Five Text Editor](https://splasho.com/upgoer5/) to write a 4-5 sentence description of your research interests
 
-* When finished, click the "PERMA-LINK" button and copy/paste the URL into the chat
+* When finished, click the "PERMA-LINK" button and copy/paste the URL into GitHub Discussion - https://github.com/course-fish521-2023/assistance/discussions/5
 
 
 # Supplementary material<br>& reproducibility
