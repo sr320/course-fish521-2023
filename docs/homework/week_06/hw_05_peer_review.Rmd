@@ -2,7 +2,7 @@
 title: "Reviewing a manuscript"
 subtitle: "Homework #5"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "7 February 2022"
+date: "13 February 2023"
 output:
   html_document:
     theme: cerulean
@@ -27,7 +27,7 @@ Your review should follow the template provided below.
 
 ## Submission
 
-When you are finished, attach your Word document to an email or provide a link to a Google document, such that Mark will be able to provide comments directly on the draft itself (ie, do not paste it into the body of an email)
+When you are finished, submit via your GitHub Repository.
 
 
 ***
