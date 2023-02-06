@@ -25,7 +25,7 @@ Write a cover letter for a submission to a journal using the template below. Bas
 
 ## Submission
 
-When you are finished, attach your Word document to an email or provide a link to a Google document, such that Mark will be able to provide comments directly on the draft itself (ie, do not paste it into the body of an email)
+When you are finished, push to your GitHub repo.
 
 
 ***
