@@ -73,7 +73,6 @@ $$
 \text{IF}_t = \frac{citations_t}{pubs_{t-1} + pubs_{t-2}}
 $$
 
-
 ## Choosing a journal | Impact Factor (IF)
 
 [Web of Science](https://www.lib.washington.edu/)

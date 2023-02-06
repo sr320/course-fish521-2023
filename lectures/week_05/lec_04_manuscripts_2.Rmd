@@ -75,11 +75,6 @@ $$
 
 ## Choosing a journal | Impact Factor (IF)
 
-[Trevor Branch's list](https://sites.google.com/a/uw.edu/most-cited-fisheries/fisheries-journal-impact-factors)
-
-
-## Choosing a journal | Impact Factor (IF)
-
 [Web of Science](https://www.lib.washington.edu/)
 
 
@@ -96,7 +91,7 @@ $$
 
 * Use Web of Science to find a journal of interest
 
-* Enter the name of the journal and its impact factor [here](https://docs.google.com/spreadsheets/d/1v7C5WVwHKuGSHzcvZmv1PA1Ky8P3SdXtbpfeiRHiX98/edit?usp=sharing)
+* Enter the name of the journal and its impact factor [here](https://docs.google.com/spreadsheets/d/1ZySCOkGb2Cv0RiOOmmy9s-YtxIsfN0xkMQ9RPm7EfuQ/edit?usp=sharing)
 
 
 ## Choosing a journal | Author guidelines
@@ -129,7 +124,7 @@ Page charges vary widely among journals; options include
 
 * Navigate to the website for the journal you chose earlier to find its impact factor
 
-* Find the publication cost(s) and enter it [here](https://docs.google.com/spreadsheets/d/1v7C5WVwHKuGSHzcvZmv1PA1Ky8P3SdXtbpfeiRHiX98/edit?usp=sharing)
+* Find the publication cost(s) and enter it [here](https://docs.google.com/spreadsheets/d/1ZySCOkGb2Cv0RiOOmmy9s-YtxIsfN0xkMQ9RPm7EfuQ/edit?usp=sharing)
 
 
 # Writing a cover letter
