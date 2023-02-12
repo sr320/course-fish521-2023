@@ -172,7 +172,7 @@ Things to consider:
 
 What would your response be to an email like this & why?
 
-Dear Dr. Scheuerell: 
+Dear Dr. Smith: 
 
 Pleased to be inviting you to review a manuscript titled "Changes in the age at maturation for two species of Cyprinid minnow raised in an aquaculture setting", which has been submitted to *The Journal of Fisheries Research*. Given your extensive background in this field, your advice would be best appreciated.  
 
@@ -341,7 +341,7 @@ your comments to the authors
 
 ## In-class exercise {.smaller}
 
-Take 15 minutes to read this abstract & provide feedback via [this form](https://forms.gle/gFb5tqkbHuBY141o8)
+Take 15 minutes to read this abstract & provide feedback via [this Discussion](https://github.com/course-fish521-2023/assistance/discussions/7)
 
 *Owing to a number of concerns about climate change, we set out to understand how fish respond to warming water temperature. Using a collection of mesocosms set out in a large field near our research station located in the central United States, we compared fish growth rates under ambient temperature compared to elevated temperatures indicative of a possible warming climate regime. This was important because fish will be even more important as a food source in the future as the number of humans on earth continues to grow and will ultimately exceed the carrying capacity of traditional land-based agricultural systems and evidence suggests already that aquaculture may be a necessary and readily available source of important protein. Our experimental results were compared to experimental controls using a 2-way ANOVA using post-hoc Tukey tests. We discovered that warmer temperatures of water in the tanks was pretty significant because our p-values were generally less than would be expected by chance alone, except in two cases where they were really close to 0.1, which is still pretty low but perhaps greater than some people have suggested is a critical threshold for statistical validity. Owing to the importance of our results, we now know that water temperatures in the future will be warmer and therefore fish may change in the future as well. Clearly, our extraordinary findings have huge implications for the future of fisheries management for a healthy and sustainable planet.*
 
