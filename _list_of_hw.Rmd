@@ -80,7 +80,7 @@ scicomm <- list(
   topics = c("Tweet thread or blog post"),
   pdf = "",
   rmd = "",
-  html = "homework/week_07/hw_06_scicomm.html",
+  #html = "homework/week_07/hw_06_scicomm.html",
   due_date = "27 Feb",
   percent = "10%"
 )
@@ -91,7 +91,7 @@ holiday_2 <- list(
   topics = c("<i>TBD</i>"),
   pdf = "",
   rmd = "",
-  html = "",
+ # html = "",
   due_date = "6 Mar",
   percent = ""
 )
@@ -102,7 +102,7 @@ presentation <- list(
   topics = c("Proposal presentation"),
   pdf = "",
   rmd = "",
-  html = "homework/week_09/hw_07_presentations.html",
+  #html = "homework/week_09/hw_07_presentations.html",
   due_date = "28 Feb<br>(In class)",
   percent = "15%"
 )
@@ -113,7 +113,7 @@ proposal_final <- list(
   topics = c("Final proposal"),
   pdf = "",
   rmd = "",
-  html = "homework/week_10/hw_08_proposal.html",
+  #html = "homework/week_10/hw_08_proposal.html",
   due_date = "16 Mar",
   percent = "20%"
 )
