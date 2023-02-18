@@ -2,10 +2,10 @@
 title: "Scientific outreach"
 subtitle: "Homework #6"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "14 February 2022"
+date: "17 February 2023"
 output:
   html_document:
-    theme: cerulean
+    theme: darkly
     highlight: textmate
     toc: true
     toc_float: true
@@ -40,6 +40,6 @@ Write a blog post about anything scientific that you find fascinating, bothersom
 
 ## Submission
 
-When you are finished, attach your Word document to an email or provide a link to a Google document, such that Mark will be able to provide comments directly on the draft itself (ie, do not paste it into the body of an email)
+Commit and push to your GitHub Repository. For Option one, this might just be a simple markdown file with a url. 
 
 

@@ -28,8 +28,8 @@ week_hw$L3 <- holiday_1
 week_hw$L4 <- proposal_draft
 week_hw$L5 <- cover_letter
 week_hw$L6 <- review_draft
-week_hw$L7 <- scicomm
-week_hw$L8 <- holiday_2
+week_hw$L7 <- holiday_2
+week_hw$L8 <- scicomm
 week_hw$L9 <- presentation
 week_hw$L10 <- proposal_final
 ```

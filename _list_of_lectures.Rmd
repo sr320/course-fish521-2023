@@ -85,23 +85,8 @@ reviewing <- list(
   zoom = ""
 )
 
-## week 7 ####
-presentations <- list(
-  title = "Presentations",
-  topics = c("Scientific presentations", "Creating a website", "Blogs & social media"),
-  pdf = c(""),
-  rmd = c(""),
-  #html = c("lectures/week_07/lec_06_scicomm.html"),
-  background = c("[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)",
-                 "[Website via Markdown](lectures/week_07/lec_06b_websites.html)",
-                 "[Bik & Goldstein (2013)](references/Bik_2013_intro_social_media.pdf)",
-                 "[Bik et al (2015)](references/Bik_2015_ten_simple_rules.pdf)",
-                 "[Shiffman (2018)](references/Shiffman_2018_social_media_for_fisheries.pdf)"
-                 ),
-  zoom = ""
-)
 
-## week 8 ####
+## week 7 ####
 holiday_2 <- list(
   title = "President's Day",
   topics = c("<i>President's Day</i>", "<b>No class</b>"),
@@ -111,6 +96,25 @@ holiday_2 <- list(
   background = "",
   zoom = ""
 )
+
+
+## week 8 ####
+presentations <- list(
+  title = "Presentations",
+  topics = c("Scientific presentations", "Creating a website", "Blogs & social media"),
+  pdf = c(""),
+  rmd = c(""),
+  html = c("lectures/week_07/lec_06_scicomm.html"),
+  background = c("[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)",
+                 "[Website via Markdown](lectures/week_07/lec_06b_websites.html)",
+                 "[Bik & Goldstein (2013)](references/Bik_2013_intro_social_media.pdf)",
+                 "[Bik et al (2015)](references/Bik_2015_ten_simple_rules.pdf)",
+                 "[Shiffman (2018)](references/Shiffman_2018_social_media_for_fisheries.pdf)"
+                 ),
+  zoom = ""
+)
+
+
 
 ## week 9 ####
 proposal_presentations <- list(
