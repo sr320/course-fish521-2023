@@ -39,7 +39,7 @@ knitr::include_graphics("img/rs_new_project.png")
 
 Scroll down the options for **Project Type** and select Quarto Blog.
 
-```{r rs_postcards, echo = FALSE, out.width = "70%", fig.align = "center"}
+```{r rs_blog, echo = FALSE, out.width = "70%", fig.align = "center"}
 knitr::include_graphics("img/rs_blog.png")
 ```
 
@@ -51,7 +51,7 @@ Choose the location where you'd like this new project to live.
 
 When you are finished, check the box next to `Open in new session` and click the **Create Project** button.
 
-```{r rs_postcards_details, echo = FALSE, out.width = "70%", fig.align = "center"}
+```{r rs_dir, echo = FALSE, out.width = "70%", fig.align = "center"}
 knitr::include_graphics("img/rs_blogdir.png")
 ```
 
@@ -61,197 +61,54 @@ knitr::include_graphics("img/rs_blogdir.png")
 
 ## Render to `docs`
 
-```{r rs_postcards, echo = FALSE, out.width = "70%", fig.align = "center"}
+```{r rs_docs, echo = FALSE, out.width = "70%", fig.align = "center"}
 knitr::include_graphics("img/rs_docs.png")
 ```
 
-You could also change the theme, blog title, links, etc here. 
+You could also change the theme, blog title, links, etc here.
 
 ## add a `.nojekyll` file
 
-```{r rs_postcards, echo = FALSE, out.width = "70%", fig.align = "center"}
+```{r rs_no, echo = FALSE, out.width = "70%", fig.align = "center"}
 knitr::include_graphics("img/rs_noj.png")
 ```
 
 ## Render
 
-```{r rs_postcards, echo = FALSE, out.width = "70%", fig.align = "center"}
+```{r rs_render, echo = FALSE, out.width = "70%", fig.align = "center"}
 knitr::include_graphics("img/rs_render.png")
 ```
 
 ## Commit and Push
+
 First time needs to be done via command line or GitHub Desktop, then could be done all within RStudio.
 
-```{r rs_postcards, echo = FALSE, out.width = "70%", fig.align = "center"}
+```{r gh_desktop, echo = FALSE, out.width = "70%", fig.align = "center"}
 knitr::include_graphics("img/gh_desktop.gif")
 ```
 
+<br>
 
+------------------------------------------------------------------------
 
+# Publish with GitHub Pages
+
+Now we can go to the repo in GitHub and set source for deployment.
+
+```{r pages, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/gh_pages.gif")
+```
+
+```{r live, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/gh_live.gif")
+```
+
+Everthing should be live.
 
 <br>
 
 ------------------------------------------------------------------------
 
-# Build the site
+# Creating a new post
 
-Let's go ahead and preview our website, which simply requires you to press the `Knit` button in the editor pane. When you do, **RStudio** will open a preview of your website in a new viewer window that should look something like this:
-
-```{r postcards_preview, echo = FALSE, out.width = "100%", fig.align = "center"}
-knitr::include_graphics("img/postcards_preview.png")
-```
-
-<br>
-
-From here on, anytime you make a change to the content in `index.Rmd` you can just click the `Knit` button to instantly generate a preview.
-
-------------------------------------------------------------------------
-
-# Personal details
-
-Now it's time to edit `index.Rmd` so it contains information about you instead of Frank. At present there are headings and content for these sections:
-
--   **Bio**
-
--   **Education**
-
--   **Experience**
-
-You can edit any of these heading names and corresponding content to meet your personal preferences. Because this information is all written with standard **Markdown**, you can take advantage of any of the additional formatting options.
-
-For example, the university and company names in the example template are enclosed with double-asterisks (`**`) so that they render in **bold** type. You could add an (un)ordered list, different heading levels, links to other URLs, equations, or additional images.
-
-Here is an example of what your website could look like after you've edited the sections and content.
-
-```{r postcards_final, echo = FALSE, out.width = "100%", fig.align = "center"}
-knitr::include_graphics("img/postcards_final.png")
-```
-
-<br>
-
-------------------------------------------------------------------------
-
-# Set up version control
-
-Once you have a complete draft of your website, it would be a good time to commit our local changes. Before we can do so, though, we need to place this project under version control with **Git**. There are 3 different ways to do this, each of which is equally effective.
-
-1)  In the shell, navigate via `cd` to the project's directory and type `git init`.
-
-2)  At the command prompt in **RStudio**, type `usethis::use_git()`.
-
-3)  From the main menu in **RStudio**,
-
-    -   select `Tools > Project Options...`\
-    -   click on `Git/SVN` in the left column\
-    -   select `Git` from the `Version control system:` dropdown menu\
-    -   click **OK** when you are finished\
-    -   you will be asked if you want to create a git repository; select **Yes**\
-    -   you will be asked if you want to restart **RStudio**; select **Yes**
-
-```{r rs_proj_options, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_proj_options.png")
-```
-
-<br>
-
-You should now see a **Git** pane in **RStudio** several untracked files waiting to be committed.
-
-```{r rs_git_pane, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_git_pane.png")
-```
-
-<br>
-
-Before we commit the files, let's go ahead and delete the picture of Frank that was included in the project when it was created. In the **File** pane in **RStudio** check the box next to `frank.jpg` and then click the `Delete` button.
-
-```{r rs_delete_frank, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_delete_frank.png")
-```
-
-<br>
-
-Now go ahead and commit your local changes to all of the files in the **Git** pane. Note, though, that we haven't yet connected this repo to **GitHub**, so you can't actually push your changes to the cloud.
-
-------------------------------------------------------------------------
-
-# Connecting to GitHub
-
-Now that you have a draft of your website, it's time to connect this local **RStudio** project to the **GitHub** repo we created at the beginning of this exercise. To do so, follow these steps:
-
--   Click on the two purple boxes and a white square in the **Git** pane.
-
-```{r rs_setup_gh_1, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_setup_gh_1.png")
-```
-
-<br>
-
--   Click `Add remote...`
-
-```{r rs_setup_gh_2, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_setup_gh_2.png")
-```
-
-<br>
-
--   In the field for `Remote Name:` enter `origin` and in the field for `Remote URL:` copy/paste the URL of your **GitHub** repo (this should be `https://github.com/USERNAME/USERNAME.github.io` where `USERNAME` is your actual **GitHub** username).
-
-```{r rs_setup_gh_3, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_setup_gh_3.png")
-```
-
-<br>
-
-When you are finished, click **Add** and **RStudio** will respond with a window showing you that your local `main` branch is set up to track the remote branch on **GitHub**, and that files you committed above have been pushed to your **GitHub** repo.
-
-**Note**: If clicking **Add** instead takes you back to the \***RStudio** does not allow to click the **New branch** window and the **Create** button is grayed out, enter `main` in `Branch name:` field and then click **Create**.
-
-```{r rs_setup_gh_4, echo = FALSE, out.width = "70%", fig.align = "center"}
-knitr::include_graphics("img/rs_setup_gh_4.png")
-```
-
-<br>
-
-Let's verify that everything has indeed been pushed to **GitHub** by navigating to your repo there and refreshing the browser. You should now see several files listed there.
-
-```{r gh_refresh, echo = FALSE, out.width = "90%", fig.align = "center"}
-knitr::include_graphics("img/gh_refresh.png")
-```
-
-<br>
-
-------------------------------------------------------------------------
-
-# Viewing on GitHub
-
-To view your website on **GitHub**, simply navigate over to `USERNAME.github.io` where `USERNAME` is your actual GitHub username. You should see something like this.
-
-```{r gh_finished_view, echo = FALSE, out.width = "100%", fig.align = "center"}
-knitr::include_graphics("img/gh_finished_view.png")
-```
-
-<br>
-
-------------------------------------------------------------------------
-
-# Other layouts
-
-## Postcards
-
-At this point you should be all set up to make changes to your website design in **RStudio** and push them to **GitHub** when you're finished. For example, we chose the `Trestles` template for our layout, but there are others available (see Sean Kross' [postcard templates](https://github.com/seankross/postcards#the-templates)). To switch to a different theme, simply change the YAML line
-
-``` markdown
-output:
-  postcards::trestles
-```
-
-to be something like
-
-``` markdown
-output:
-  postcards::jolla_blue
-```
-
-## Other formats
-
-You could also specify a completely different format/layout/template, save it as `index.html`, and then that new site would render instead of the `{postcards}` site we just created.
+Add a new post to your blog by creating a sub-directory within `posts`, and adding an `index.qmd`file to the directory. That `qmd` file is the new blog post and when you render that, the blog home page will automatically update to include the newest post at the top of the listing. For more options see <https://quarto.org/docs/websites/website-blog.html#posts-directory>

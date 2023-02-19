@@ -103,7 +103,7 @@ knitr::include_graphics("img/gh_pages.gif")
 knitr::include_graphics("img/gh_live.gif")
 ```
 
-Everthing should be live. 
+Everthing should be live.
 
 <br>
 
@@ -111,4 +111,4 @@ Everthing should be live.
 
 # Creating a new post
 
-
+Add a new post to your blog by creating a sub-directory within `posts`, and adding an `index.qmd`file to the directory. That `qmd` file is the new blog post and when you render that, the blog home page will automatically update to include the newest post at the top of the listing. For more options see <https://quarto.org/docs/websites/website-blog.html#posts-directory>
