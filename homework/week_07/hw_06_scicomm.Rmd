@@ -24,22 +24,18 @@ You have two options for your homework this week. Both of them will require you 
 
 ### Option 1
 
-Write a "Twitter thread" consisting of 6 or more separate tweets that tells the story about a paper of interest (eg, the paper you chose for assignment #1). Your thread should include a combination of _text of your own writing_ and images copied/pasted from the paper itself (eg, [here](https://twitter.com/mark_scheuerell/status/1328405485901336576) is one that Mark wrote about one of his own papers). For your images, be sure to include some alternate text that could be used by someone who is visually impaired to understand the image content. A few things to note
+Write a "Twitter thread" consisting of 6 or more separate tweets that tells the story about a paper of interest (eg, the paper you chose for assignment #1). Your thread should include a combination of *text of your own writing* and images copied/pasted from the paper itself (eg, [here](https://twitter.com/mark_scheuerell/status/1328405485901336576) is one that Mark wrote about one of his own papers). For your images, be sure to include some alternate text that could be used by someone who is visually impaired to understand the image content. A few things to note
 
-* Any one tweet is limitied to 280 characters, including spaces.
+-   Any one tweet is limitied to 280 characters, including spaces.
 
-* The first tweet should introduce the paper and include a link to its online version.
+-   The first tweet should introduce the paper and include a link to its online version.
 
-* The last tweet should include the take-home message(s).
-
+-   The last tweet should include the take-home message(s).
 
 ### Option 2
 
-Write a blog post about anything scientific that you find fascinating, bothersome, etc. The topic could be something you study or work on, or something that you're just interested in more generally. Your post should be approximately 1000 words. Your intention should be to convey the novelty or importance of the topic _using plain writing_. If you're looking for inspiration, consider some examples from [_Small Pond Science_](https://smallpondscience.com/) or [_Dynamic Ecology_](https://dynamicecology.wordpress.com/).
-
+Write a blog post about a paper, or anything scientific that you find fascinating, bothersome, etc, using the [blog platform covered in class](https://sr320.github.io/course-fish521-2023/lectures/week_07/lec_06b_websites.html). The topic could be something you study or work on, or something that you're just interested in more generally. Your post should be approximately 1000 words. Your intention should be to convey the novelty or importance of the topic *using plain writing*. If you're looking for inspiration, consider some examples from [*Small Pond Science*](https://smallpondscience.com/) or [*Dynamic Ecology*](https://dynamicecology.wordpress.com/).
 
 ## Submission
 
-Commit and push to your GitHub Repository. For Option one, this might just be a simple markdown file with a url. 
-
-
+In both cases you will simply have a url to share. Plw
