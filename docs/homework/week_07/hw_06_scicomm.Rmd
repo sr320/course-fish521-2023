@@ -38,4 +38,4 @@ Write a blog post about a paper, or anything scientific that you find fascinatin
 
 ## Submission
 
-In both cases you will simply have a url to share. Plw
+In both cases you will simply have a url to share. Please place a markdown file with the url in your homework directory.
