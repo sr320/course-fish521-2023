@@ -2,7 +2,7 @@
 title: "Scientific outreach"
 subtitle: "Homework #6"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "17 February 2023"
+date: "27 February 2023"
 output:
   html_document:
     theme: darkly
