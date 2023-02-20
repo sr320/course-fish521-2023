@@ -1,11 +1,11 @@
 ---
 title: "Writing a cover letter"
-subtitle: "Homework #4"
+subtitle: "Homework #5"
 author: "FISH 521 - Proposal Writing and Professional Development"
 date: "06 Febuary 2023"
 output:
   html_document:
-    theme: cerulean
+    theme: darkly
     highlight: textmate
     toc: true
     toc_float: true

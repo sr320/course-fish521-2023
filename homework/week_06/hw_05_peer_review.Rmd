@@ -1,11 +1,11 @@
 ---
 title: "Reviewing a manuscript"
-subtitle: "Homework #5"
+subtitle: "Homework #6"
 author: "FISH 521 - Proposal Writing and Professional Development"
 date: "13 February 2023"
 output:
   html_document:
-    theme: cerulean
+    theme: darkly
     highlight: textmate
     toc: true
     toc_float: true
