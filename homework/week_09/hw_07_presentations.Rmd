@@ -1,11 +1,11 @@
 ---
 title: "Student presentations"
-subtitle: "Homework #7"
+subtitle: ""
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "28 February 2022"
+date: "6 March 2023"
 output:
   html_document:
-    theme: cerulean
+    theme: darkly
     highlight: textmate
     toc: true
     toc_float: true
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Background
 
-Your assignment this week is to give a live presentation of your proposal idea **in class** on February 28. Your presentation should cover the following elements:
+Your assignment this week is to give a live presentation of your proposal idea **in class** on Mqrch 6. Your presentation should cover the following elements:
 
 * Background and rationale for your proposed research
 
@@ -58,12 +58,12 @@ Mark will evaluate the quality of your presentation based on the following crite
 
 ## Presentation upload
 
-Please note that due to our tight time frame in class, **you are required to upload your presentation no later than 12:30 PM Pacific Standard Time on February 28** using [this link](https://forms.gle/st4cSc3Z9htH4FyG8). Also note that **presentations will only be accepted in either presentation** (`.ppt`, `.pptx`) **or PDF** (`.pdf`) **formats**. If you use an `.html` format (eg, ioslides, Xaringan), you will need to print your slide deck to a `.pdf` format using your browser's print function.
+Please note that due to our tight time frame in class, **you are required to push your presentation to your GitHub repo no later than 12:30 PM Pacific Standard Time on March 6** 
 
 
 ## Schedule
 
-Here is the schedule for the day. **Note that everyone has a total of 7 minutes for their presentation**. This includes Mark's introduction of you and any Q&A.
+Here is the schedule for the day. **Note that everyone has a total of 7 minutes for their presentation**. This includes introduction of you and any Q&A.
 
 ```{r schedule, echo = FALSE}
 library(magrittr)
@@ -72,26 +72,24 @@ set.seed(521)
 
 ## set class roster
 roster <- c(
-  "Backstrom",
-  "Bengtsson",
-  "Bishop",
-  "Cattau",
-  "Chambers",
-  "Code",
-  "Doran",
-  "Hennings",
-  "Hiwatari",
-  "Jameson",
-  "Mantegna",
-  "Pendleton",
-  "Peraza",
-  "Setzke",
-  "Simeon",
-  "Stone",
-  "Tanja",
-  "Veggerby",
-  "Wang",
-  "Zahner"
+  "Boggs",
+  "Gammelin",
+  "Hallock",
+  "Henry",
+  "Jacuzzi",
+  "Kattil-Debrum",
+  "Kinneen",
+  "Lasdin",
+  "Leigh",
+  "Mcgreal",
+  "Neal",
+  "Redon",
+  "Skalley",
+  "Teman",
+  "Vaage",
+  "Valdivia",
+  "Yerrace",
+  "Zhang"
   )
 
 ## order of presentations
@@ -135,7 +133,6 @@ kableExtra::kable(schedule, format = "html", caption = " ",
   column_spec(2, width = "15em")
 ```
 
-(The order of presentations was determined by random draw. You can see the code [here](https://github.com/UW-FISH521/website/blob/bec2a9e8b7ac8eecada021c198501890c91b0ace/homework/week_09/hw_07_presentations.Rmd#L63-L130).)
 
 
 

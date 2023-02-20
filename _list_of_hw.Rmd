@@ -102,8 +102,8 @@ presentation <- list(
   topics = c("Proposal presentation"),
   pdf = "",
   rmd = "",
-  #html = "homework/week_09/hw_07_presentations.html",
-  due_date = "28 Feb<br>(In class)",
+  html = "homework/week_09/hw_07_presentations.html",
+  due_date = "Mar 6<br>(In class)",
   percent = "15%"
 )
 
