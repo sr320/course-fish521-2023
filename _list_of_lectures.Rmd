@@ -128,15 +128,15 @@ proposal_presentations <- list(
 )
 
 ## week 10 ####
-careers <- list(
-  title = "Careers in AFS",
-  topics = c("Mentoring", "Career panel"),
-  pdf = c(""),
-  rmd = c(""),
-  #html = c("https://career-panel.netlify.app/"),
-  background = c("[Hampton & Labou (2017)](references/Hampton_2017_careers_in_ecology.pdf)"),
-  zoom = ""
-)
+# careers <- list(
+#   title = "Careers in AFS",
+#   topics = c("Mentoring", "Career panel"),
+#   pdf = c(""),
+#   rmd = c(""),
+#   #html = c("https://career-panel.netlify.app/"),
+#   background = c("[Hampton & Labou (2017)](references/Hampton_2017_careers_in_ecology.pdf)"),
+#   zoom = ""
+# )
 
 ```
 

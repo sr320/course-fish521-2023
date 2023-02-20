@@ -51,7 +51,7 @@ week_lecs$L8 <- presentations
 ## week 9
 week_lecs$L9 <- proposal_presentations
 ## week 10
-week_lecs$L10 <- careers
+#week_lecs$L10 <- careers
 ```
 
 ```{r topics, include = FALSE, eval = FALSE}
