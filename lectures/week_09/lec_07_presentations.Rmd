@@ -13,4 +13,4 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-# Please see the homework page [here](/website/homework/week_09/hw_07_presentations.html) for details
+# Please see the homework page [here](https://sr320.github.io/course-fish521-2023/homework/week_09/hw_07_presentations.html) for details
