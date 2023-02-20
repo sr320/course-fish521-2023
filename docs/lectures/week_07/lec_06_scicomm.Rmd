@@ -2,7 +2,7 @@
 title: "Scientific presentations"
 subtitle: "Proposal writing & professional development<br>FISH 521"
 author: 
-date: "27 March 2023"
+date: "27 February 2023"
 output:
   ioslides_presentation:
     css: lecture_slides.css
@@ -12,212 +12,190 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
 # Presentations
-
 
 ## Elements of a good presentation
 
-People really know a _bad_ presentation when they see one
+People really know a *bad* presentation when they see one
 
 What makes a good presentation?
 
-
-## Elements of a good presentation | Know your audience
+## Elements of a good presentation \| Know your audience
 
 To whom will you be speaking?
 
-* lab members
+-   lab members
 
-* other experts
+-   other experts
 
-* general public
+-   general public
 
-
-## Elements of a good presentation | Know your audience
+## Elements of a good presentation \| Know your audience
 
 How much time do I have?
 
-* <10 min (lightning talk)
+-   \<10 min (lightning talk)
 
-* 15-20 (standard conference)
+-   15-20 (standard conference)
 
-* 45-50 min (full seminar)
+-   45-50 min (full seminar)
 
-
-## Elements of a good presentation | Know your room
+## Elements of a good presentation \| Know your room
 
 If possible, check out the space well ahead of time
 
-> - Is there a podium or stage?
+> -   Is there a podium or stage?
 
-> - Is there a lectern?
+> -   Is there a lectern?
 
-> - Is there a microphone?
+> -   Is there a microphone?
 
-> - Is there a laser pointer & how does it work?
+> -   Is there a laser pointer & how does it work?
 
+## Elements of a good presentation \| Be yourself
 
-## Elements of a good presentation | Be yourself
+-   People enjoy authenticity
 
-* People enjoy authenticity
+> -   Show enthusiasm & excitement
 
-> - Show enthusiasm & excitement
+> -   Use gestures & vocal inflections
 
-> - Use gestures & vocal inflections
-
-
-## Elements of a good presentation | Tell a story
+## Elements of a good presentation \| Tell a story
 
 beginning / middle / end
 
-> - Start with context
+> -   Start with context
 
-> - Frame the problem
+> -   Frame the problem
 
-> - Provide highlights
+> -   Provide highlights
 
-> - Summarize take-home message(s)
+> -   Summarize take-home message(s)
 
+## Elements of a good presentation \| Keep it simple
 
-## Elements of a good presentation | Keep it simple
+-   Avoid jargon to the extent possible
 
-* Avoid jargon to the extent possible
+> -   Use equations judiciously (use words whenever possible)
 
-> - Use equations judiciously (use words whenever possible)
+> -   data = truth ± error
 
-> - data = truth &#177; error
+## Elements of a good presentation \| Prepare, practice & perfect
 
+-   Give yourself ample time to analyze & create
 
-## Elements of a good presentation | Prepare, practice & perfect
+> -   Practice. Practice. Practice.
 
-* Give yourself ample time to analyze & create
+> -   Beware of "um", "uh", "you know"
 
-> - Practice. Practice. Practice.
+> -   Consider writing out the first few sentences
 
-> - Beware of "um", "uh", "you know"
+## Elements of a good presentation \| Take care of yourself
 
-> - Consider writing out the first few sentences
+-   Get plenty of rest
 
+> -   Drink plenty of water
 
-## Elements of a good presentation | Take care of yourself
+> -   Beware of your caffeine intake
 
-* Get plenty of rest
+> -   Eat something light beforehand
 
-> - Drink plenty of water
+## Elements of a good presentation \| Look & act professional
 
-> - Beware of your caffeine intake
+-   Dress for the occasion
 
-> - Eat something light beforehand
+> -   Check your posture & hands & pockets
 
+> -   Smile
 
-## Elements of a good presentation | Look & act professional
+> -   Speak loudly & proudly
 
-* Dress for the occasion
+> -   Use humor judiciously
 
-> - Check your posture & hands & pockets
+> -   Talk to the audience, not the screen
 
-> - Smile
+> -   Take your time to explain things
 
-> - Speak loudly & proudly
+## Elements of a good presentation \| Slide layouts
 
-> - Use humor judiciously
+-   Use color judiciously
 
-> - Talk to the audience, not the screen
+> -   Use high contrast colors & backgrounds
 
-> - Take your time to explain things
+> -   Beware of templates
 
+> -   Use large fonts (16+ point)
 
-## Elements of a good presentation | Slide layouts
+> -   Build up concepts from their components
 
-* Use color judiciously
+> -   Never apologize for a slide or image
 
-> - Use high contrast colors & backgrounds
+## Elements of a good presentation \| Title slide
 
-> - Beware of templates
+-   Use a short but informative title
 
-> - Use large fonts (16+ point)
+> -   List your name & affiliation
 
-> - Build up concepts from their components
+> -   List your email & possibly social media handle
 
-> - Never apologize for a slide or image
+## Elements of a good presentation \| Bullets & phrases
 
+-   Text is for the audience, not you
 
-## Elements of a good presentation | Title slide
+> -   Use short phrases, not sentences (3-7 words)
 
-* Use a short but informative title
+> -   Don't read your own text
 
-> - List your name & affiliation
+## Elements of a good presentation \| Plots & graphics
 
-> - List your email & possibly social media handle
+-   Keep them simple
 
+> -   Walk people through plots (axes, points, lines, colors)
 
-## Elements of a good presentation | Bullets & phrases
+> -   A pictures is worth a 1000 words
 
-* Text is for the audience, not you
+> -   Beware of poor contrast of text/images
 
-> - Use short phrases, not sentences (3-7 words)
+## Elements of a good presentation \| Tables
 
-> - Don't read your own text
+-   Just don't...
 
+> -   If necessary, keep it small (2x2, 3x3)
 
-## Elements of a good presentation | Plots & graphics
+## Elements of a good presentation \| Acknowledgments
 
-* Keep them simple
+-   Be sure to thank your collaborators, technicians & funders
 
-> - Walk people through plots (axes, points, lines, colors)
+> -   I like to do this in the beginning
 
-> - A pictures is worth a 1000 words
+## Elements of a good presentation \| Summary slide(s)
 
-> - Beware of poor contrast of text/images
+-   Consider 1-3 simple take-home messages
 
+> -   List your email & possibly social media handle
 
-## Elements of a good presentation | Tables
+> -   Use a definitive closing statement (eg, "Thank you")
 
-* Just don't...
+> -   Avoid "Thank you!" or "Questions?" slides
 
-> - If necessary, keep it small (2x2, 3x3)
+## Elements of a good presentation \| Questions & answers
 
+-   This can be the hardest part of your talk
 
-## Elements of a good presentation | Acknowledgments
+> -   Repeating the Q shows you understand & gives you time to think
 
-* Be sure to thank your collaborators, technicians & funders
+> -   Don't be afraid to say, "I don't know"
 
-> - I like to do this in the beginning
-
-
-## Elements of a good presentation | Summary slide(s)
-
-* Consider 1-3 simple take-home messages
-
-> - List your email & possibly social media handle
-
-> - Use a definitive closing statement (eg, "Thank you")
-
-> - Avoid "Thank you!" or "Questions?" slides
-
-
-## Elements of a good presentation | Questions & answers
-
-* This can be the hardest part of your talk
-
-> - Repeating the Q shows you understand & gives you time to think
-
-> - Don't be afraid to say, "I don't know"
-
-> - Try to defuse antagonistic people ("I can talk to you afterward")
-
+> -   Try to defuse antagonistic people ("I can talk to you afterward")
 
 # Social media for science
 
-## &nbsp; {data-background=trevor.png data-background-size=95% data-background-position="50% 50%"}
-
+##   {data-background="trevor.png" data-background-size="95%" data-background-position="50% 50%"}
 
 ## Trevor Branch
 
 Science communicator
 
-* [General SciComm](https://twitter.com/TrevorABranch) (with 16.1k followers!)
+-   [General SciComm](https://twitter.com/TrevorABranch) (with 16.1k followers!)
 
-* [Blue whale news](https://twitter.com/BlueWhaleNews)
-
+-   [Blue whale news](https://twitter.com/BlueWhaleNews)

@@ -1,8 +1,8 @@
 ---
 title: "Student presentations"
 subtitle: "Proposal writing & professional development<br>FISH 521"
-author: "Mark Scheuerell"
-date: "28 February 2022"
+author: 
+date: "06 March 2023"
 output:
   ioslides_presentation:
     css: lecture_slides.css
