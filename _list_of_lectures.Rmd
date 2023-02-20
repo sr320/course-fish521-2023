@@ -122,7 +122,7 @@ proposal_presentations <- list(
   topics = c("Student presentations of proposals"),
   pdf = c(""),
   rmd = c(""),
-  #html = c("lectures/week_09/lec_07_presentations.html"),
+  html = c("lectures/week_09/lec_07_presentations.html"),
   background = c(""),
   zoom = ""
 )
