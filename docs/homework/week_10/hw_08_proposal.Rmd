@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Background
 
-Your final assignment for the course is to complete a full draft of a research proposal, building off of the introductory material you wrote for assignment #3. Some of you do not yet have fully formed research projects, so please do the best you can at this point, just as you did with your presentation. Mark will be looking for well-formed ideas, rationale, and methods, as well as improvement in your writing from your first draft.
+Your final assignment for the course is to complete a full draft of a research proposal, building off of the introductory material you wrote for assignment #3. Some of you do not yet have fully formed research projects, so please do the best you can at this point, just as you did with your presentation. Will be looking for well-formed ideas, rationale, and methods, as well as improvement in your writing from your first draft.
 
 
 ## Instructions
