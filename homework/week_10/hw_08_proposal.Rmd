@@ -2,10 +2,10 @@
 title: "Final proposal"
 subtitle: "Homework #8"
 author: "FISH 521 - Proposal Writing and Professional Development"
-date: "7 March 2022"
+date: "16 March 2023"
 output:
   html_document:
-    theme: cerulean
+    theme: darkly
     highlight: textmate
     toc: true
     toc_float: true
@@ -64,6 +64,6 @@ Write a full draft of your research proposal with the following general structur
 
 ## Submission
 
-When you are finished, attach your Word document to an email or provide a link to a Google document, such that Mark will be able to provide comments directly on the draft itself.
+When you are finished, push to your GitHub repo.
 
 
