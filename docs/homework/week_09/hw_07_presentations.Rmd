@@ -56,6 +56,11 @@ We will evaluate the quality of your presentation based on the following criteri
 * Appropriate ending
 
 
+## Evaluation Form
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf81VSroVH0veqs-efJIZ9u1Fu24WcrA60B-Skc76JURu242Q/viewform?embedded=true" width="640" height="1474" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
 ## Presentation upload
 
 Please note that due to our tight time frame in class, **you are required to push your presentation to your GitHub repo no later than 12:30 PM Pacific Standard Time on March 6** 
